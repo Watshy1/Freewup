@@ -2,7 +2,7 @@
     "name": "admin/transversal_project",
     "autoload": {
         "psr-4": {
-            "Freewup\\": "src/",
+            "Mvc\\": "src/",
             "Config\\": "config/"
         }
     },

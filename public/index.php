@@ -6,30 +6,18 @@ session_start();
 
 $router = new Bramus\Router\Router();
 
-$router->get('/', 'Freewup\Controller\UserController@show');
+$router->get('/', 'Mvc\Controller\PageController@HomePage');
 
-$router->get('/register', function() {
-    echo "Page d'inscription";
-});
+$router->get('/register', 'Mvc\Controller\PageController@RegisterPage');
 
-$router->get('/login', function() {
-    echo "Page de connexion";
-});
+$router->get('/login', 'Mvc\Controller\PageController@LoginPage');
 
-$router->get('/author', function() {
-    echo "Page Auteur";
-});
+$router->get('/author', 'Mvc\Controller\PageController@AuthorPage');
 
-$router->get('/blog', function() {
-    echo "Page blog";
-});
+$router->get('/blog', 'Mvc\Controller\PageController@BlogPage');
 
-$router->get('/privateMessage', function() {
-    echo "Page de message privé";
-});
+$router->get('/privateMessage', 'Mvc\Controller\PageController@PrivateMessagePage');
 
-$router->get('/profil', function() {
-    echo "Page profil";
-});
+$router->get('/profil', 'Mvc\Controller\PageController@ProfilPage');
 
 $router->run();
