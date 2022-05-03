@@ -1,5 +1,6 @@
 {% block css %}
- <link rel="stylesheet" href="assets/css/main/login.css">
+    <script src="https://kit.fontawesome.com/2fc22ca3fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/main/login.css">
 {% endblock %}
 
 
@@ -7,8 +8,28 @@
 {% block main %}
     <div class="background_image"></div>
 
-    <div class="title">
-        <img src="assets/images/ConnexionPage/" alt="logo Freew'up"></img>
-        <h1>freew'up</h1>
+    <div class="content">
+        <div class="title">
+            <img src="assets/images/ConnexionPage/" alt="logo Freew'up"></img>
+            <h1>freew'up</h1>
+        </div>
+
+        <div class="connexion_block">
+            <input type="texte" placeholder="Nom d'utilisateur / Email">
+            <input type="texte" placeholder="Mot de passe"> {# Ajouter bouton pour afficher le mot de passe et le cacher (JS) #}
+            <a href="">Mot de passe oublié ?</a>
+            <div class="connexion_block_memory_me">
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="login_checkbox"></span>
+                </label>
+                <p>Se souvenir de moi</p>
+            </div>
+            <div></div> {# trait de séparation #}
+            <p>OU</p>
+            <button><i class="fa-brands fa-google"></i>Se connecter avec Google </button>
+            <button><i class="fa-brands fa-apple"></i>Se connecter avec Apple </button>
+            <button>Connexion</button>
+        </div>
     </div>
 {% endblock %}
