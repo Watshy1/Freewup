@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.background_image {
+    height: 100%;
+    background-image: url(../../images/ConnexionPage/image-fond-page-connexion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+}
+
+.title {
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+h1 {
+    font-size: 70px;
+}
