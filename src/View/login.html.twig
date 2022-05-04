@@ -1,6 +1,9 @@
 {% block css %}
-    <script src="https://kit.fontawesome.com/2fc22ca3fa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/main/login.css">
+{% endblock %}
+
+{% block script %}
+    <script src="https://kit.fontawesome.com/2fc22ca3fa.js" crossorigin="anonymous"></script>
 {% endblock %}
 
 
@@ -15,8 +18,11 @@
         </div>
 
         <div class="connexion_block">
-            <input type="texte" placeholder="Nom d'utilisateur / Email">
-            <input type="texte" placeholder="Mot de passe"> {# Ajouter bouton pour afficher le mot de passe et le cacher (JS) #}
+            <form action="" method="POST">
+                <input type="texte" name="email" placeholder="Nom d'utilisateur / Email">
+                <input type="password" name="password" placeholder="Mot de passe"> {# Ajouter bouton pour afficher le mot de passe et le cacher (JS) #}
+                <input type="submit">
+            </form>
             <a href="">Mot de passe oublié ?</a>
             <div class="connexion_block_memory_me">
                 <label class="container">
@@ -29,7 +35,6 @@
             <p>OU</p>
             <button><i class="fa-brands fa-google"></i>Se connecter avec Google </button>
             <button><i class="fa-brands fa-apple"></i>Se connecter avec Apple </button>
-            <button>Connexion</button>
         </div>
     </div>
 {% endblock %}

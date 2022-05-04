@@ -8,7 +8,8 @@
     },
     "require": {
         "twig/twig": "^3.3",
-        "bramus/router": "^1.6"
+        "bramus/router": "^1.6",
+        "ext-pdo": "*"
     },
     "require-dev": {
         "symfony/var-dumper": "^6.0"

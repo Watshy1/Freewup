@@ -6,11 +6,36 @@ session_start();
 
 $router = new Bramus\Router\Router();
 
+$router->before('GET|POST', '/', function() {
+    if (!isset($_SESSION['user'])) {
+        header('location: /login');
+        exit;
+    }
+});
+
+$router->before('GET|POST', '/login', function() {
+    if (isset($_SESSION['user'])) {
+        header('location: /');
+        exit;
+    }
+});
+
+$router->before('GET|POST', '/register', function() {
+    if (isset($_SESSION['user'])) {
+        header('location: /');
+        exit;
+    }
+});
+
 $router->get('/', 'Mvc\Controller\PageController@HomePage');
 
 $router->get('/register', 'Mvc\Controller\PageController@RegisterPage');
+$router->post('/register', 'Mvc\Controller\UserController@register');
 
 $router->get('/login', 'Mvc\Controller\PageController@LoginPage');
+$router->post('/login', 'Mvc\Controller\UserController@login');
+
+$router->get('/logout', 'Mvc\Controller\UserController@logout');
 
 $router->get('/author', 'Mvc\Controller\PageController@AuthorPage');
 
