@@ -12,29 +12,35 @@
     <div class="background_image"></div>
 
     <div class="content">
-        <div class="title">
-            <img src="assets/images/ConnexionPage/" alt="logo Freew'up"></img>
-            <h1>freew'up</h1>
-        </div>
+        <img src="assets/images/ConnexionPage/logo-freewup-white.png" alt="logo Freew'up"></img>
 
         <div class="connexion_block">
             <form action="" method="POST">
-                <input type="texte" name="email" placeholder="Nom d'utilisateur / Email">
-                <input type="password" name="password" placeholder="Mot de passe"> {# Ajouter bouton pour afficher le mot de passe et le cacher (JS) #}
-                <input type="submit">
+                <div class="connexion_block_input">
+                    <input type="texte" name="email" placeholder="Nom d'utilisateur / Email">
+                    <input type="password" name="password" placeholder="Mot de passe"> {# Ajouter bouton pour afficher le mot de passe et le cacher (JS) #}
+                </div>
+                <a href="">Mot de passe oublié ?</a>
+                <div class="connexion_block_memory_me">
+                    <label class="container">
+                        <input type="checkbox">
+                        <span class="login_checkbox"></span>
+                    </label>
+                    <p>Se souvenir de moi</p>
+                </div>
+                <div class="connexion_block_separation"></div> {# trait de séparation #}
+                <p>OU</p>
+                <div class="connexion_block_buttons">
+                    <button><i class="fa-brands fa-google fa-xl"></i>Se connecter avec Google </button>
+                    <button><i class="fa-brands fa-apple fa-2xl"></i>Se connecter avec Apple </button>
+                </div>
+                <input type="submit" value="Connexion">
             </form>
-            <a href="">Mot de passe oublié ?</a>
-            <div class="connexion_block_memory_me">
-                <label class="container">
-                    <input type="checkbox">
-                    <span class="login_checkbox"></span>
-                </label>
-                <p>Se souvenir de moi</p>
-            </div>
-            <div></div> {# trait de séparation #}
-            <p>OU</p>
-            <button><i class="fa-brands fa-google"></i>Se connecter avec Google </button>
-            <button><i class="fa-brands fa-apple"></i>Se connecter avec Apple </button>
+        </div>
+
+        <div class="register_block">
+            <p>Vous n'avez pas de compte ?</p>
+            <a href="/register"><button>Inscription</button></a>
         </div>
     </div>
 {% endblock %}

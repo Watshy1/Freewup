@@ -21,23 +21,18 @@ body {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
     position: absolute;
-    top: 40%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.title {
-    color: white;
-    z-index: 2;
-    text-align: center;
-    display: flex;
-    align-items: center;
-}
-
-h1 {
-    font-family: 'Avenir_Light';
-    font-size: 70px;
+img {
+    margin-bottom: 52.9px;
 }
 
 .connexion_block {
@@ -68,12 +63,33 @@ input[type=texte], input[type=password] {
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-a {
+.connexion_block_input {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.connexion_block a {
     font-family: 'Avenir_Light';
     font-size: 12px;
     color: white;
+    margin: 13px 0 0 0;
+}
+
+.connexion_block p {
+    margin: 0 0 9px 0;
+    font-family: 'Avenir_Medium';
+    font-size: 12px;
+    color: white;
+}
+
+.connexion_block_memory_me > p {
+    font-family: 'Avenir_Light';
+    font-size: 15px;
+    margin: 15px 0 15px 13px;
 }
 
 .connexion_block_memory_me {
@@ -129,6 +145,82 @@ a {
     color: green;
 }
 
+.connexion_block_separation {
+    width: 360px;
+    border: solid 2px #707070;
+    margin: 18.5px 0 15px 0;
+}
+
+.connexion_block button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 367px;
+    height: 40px;
+    padding-left: 17%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: 'Avenir_Medium';
+    font-size: 16px;
+}
+
+button:first-child {
+    background-color: #D64D3B;
+}
+
+button:last-child {
+    background-color: black;
+}
+
+.connexion_block_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input[type=submit] {
+    width: 237px;
+    height: 46px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: "Avenir_Heavy";
+    font-size: 19px;
+    margin-top: 21px;
+}
+
+.register_block {
+    z-index: 2;
+    text-align: center;
+    width: 451px;
+    height: 146px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;   
+}
+
+.register_block p{
+    margin: 0;
+    font-family: 'Avenir_Light';
+    font-size: 18px;
+    color: white;
+}
+
+.register_block button {
+    width: 237px;
+    height: 46px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Avenir_Heavy';
+    font-size: 19px;
+}
 
 
 /* Font Family */
