@@ -147,7 +147,7 @@ form {
 .login_checkbox:after {
     content: "\2713";
     left: 2px;
-    top: -3px;
+    top: 0px;
     font-size: 21px;
     position: absolute;
     display: none;
