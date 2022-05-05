@@ -14,27 +14,27 @@ class PageController extends Controller
 
     public function HomePage()
     {
-        echo $this->twig->render('home.html.twig');
+        echo $this->twig->render('main/home.html.twig');
     }
 
     public function RegisterPage()
     {
-        echo $this->twig->render('register.html.twig');
+        echo $this->twig->render('register_login/register.html.twig');
     }
 
     public function LoginPage()
     {
-        echo $this->twig->render('login.html.twig');
+        echo $this->twig->render('register_login/login.html.twig');
     }
 
     public function AuthorPage()
     {
-        echo $this->twig->render('author.html.twig');
+        echo $this->twig->render('main/author.html.twig');
     }
 
     public function BlogPage()
     {
-        echo $this->twig->render('blog.html.twig');
+        echo $this->twig->render('main/blog.html.twig');
     }
 
     public function PrivateMessagePage()
@@ -44,6 +44,6 @@ class PageController extends Controller
 
     public function ProfilPage()
     {
-        echo $this->twig->render('profil.html.twig');
+        echo $this->twig->render('main/profil.html.twig');
     }
 }

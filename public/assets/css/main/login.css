@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     height: 100%;
@@ -49,7 +53,7 @@ img {
     gap: 10px;
 }
 
-input[type=texte], input[type=password] {
+input[type=text], input[type=password] {
     width: 367px;
     height: 47px;
     border-radius: 10px;
@@ -58,6 +62,16 @@ input[type=texte], input[type=password] {
     padding: 0 10px;
     font-family: 'Avenir_Light';
     font-size: 16px;
+}
+
+.hide_show_password {
+    background-image: url(../../images/ConnexionPage/hide.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
 }
 
 form {
@@ -70,6 +84,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 18px;
+    position: relative;
 }
 
 .connexion_block a {
@@ -151,6 +166,10 @@ form {
     margin: 18.5px 0 15px 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 .connexion_block button {
     display: flex;
     align-items: center;
@@ -189,6 +208,7 @@ input[type=submit] {
     font-family: "Avenir_Heavy";
     font-size: 19px;
     margin-top: 21px;
+    cursor: pointer;
 }
 
 .register_block {
