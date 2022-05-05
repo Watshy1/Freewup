@@ -35,6 +35,10 @@ body {
     transform: translate(-50%, -50%);
 }
 
+img {
+    margin-bottom: 52.9px;
+}
+
 .register_block {
     z-index: 2;
     text-align: center;
