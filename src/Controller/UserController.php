@@ -8,7 +8,6 @@ use Mvc\Model\UserModel;
 
 class UserController extends Controller
 {
-
     private UserModel $userModel;
 
     public function __construct()
@@ -31,7 +30,7 @@ class UserController extends Controller
             }
         }
 
-        echo $this->twig->render('register.html.twig');
+        echo $this->twig->render('register_login/register.html.twig');
     }
 
     public function login()
@@ -51,7 +50,7 @@ class UserController extends Controller
                 exit;
             }
         }
-        echo $this->twig->render('login.html.twig');
+        echo $this->twig->render('register_login/login.html.twig');
     }
 
     #[NoReturn] public function logout() {

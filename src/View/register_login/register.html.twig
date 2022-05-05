@@ -1,13 +1,62 @@
 {% extends 'register_login/base.html.twig' %}
 
 {% block css %}
+    <link rel="stylesheet" href="assets/css/main/register.css">
+{% endblock %}
 
+{% block script %}
+    <script src="https://kit.fontawesome.com/2fc22ca3fa.js" crossorigin="anonymous"></script>
+    <script src="assets/JavaScript/main/register.js"></script>
 {% endblock %}
 
 
 
 {% block main %}
-    <form action="" method="POST">
+    <div class="background_image"></div>
+
+    <div class="content">
+        <img src="assets/images/ConnexionPage/logo-freewup-white.png" alt="logo Freew'up"></img>
+
+        <div class="register_block">
+            <a href="/login"><i class="fa-solid fa-chevron-left"></i>Retour</a>
+            <h3>Inscription</h3>
+            <div>
+                <form action="" method="POST">
+                    <div class="form_input">
+                        <input type="text" placeholder="Prénom et nom">
+                        <input type="text" placeholder="Adresse email*">
+                        <input type="text" placeholder="Confirmation de l'adresse email*">
+                        <input type="password" placeholder="Mot de passe*">
+                        <input type="password" placeholder="Confirmation du mot de passe*">
+                        <input type="text" placeholder="Numéro de téléphone">
+                        <input type="text" placeholder="Date de naissance">
+                        <p>*mentions obligatoires</p>
+                    </div>
+                    <div class="register_block_separator"></div>
+                    <div class="register_block_right">
+                        <p>OU</p>
+                        <button class="button_google" disabled><i class="fa-brands fa-google fa-xl"></i>S'inscrire avec Google </button>
+                        <button class="button_apple" disabled><i class="fa-brands fa-apple fa-2xl"></i>S'inscrire avec Apple </button>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="register_checkbox"></span>
+                        </label>
+                        <p>J'accepte les conditions générales d'utilisation</p>
+                        <input type="submit" value="Inscription">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+{# color = #ACACAC #}
+
+
+
+{# <form action="" method="POST">
         <label for="nickname">Nickname</label>
         <input type="text" id="nickname" name="nickname" placeholder="Callypso10" required><br>
         <label for="email">Email</label>
@@ -15,5 +64,4 @@
         <label for="password">Password</label>
         <input type="password" id="password" name="password" placeholder="**********" required><br>
         <input type="submit" value="register">
-    </form>
-{% endblock %}
+</form> #}

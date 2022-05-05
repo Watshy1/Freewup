@@ -1,0 +1,224 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.background_image {
+    position: relative;
+    height: 100%;
+    background-image: url(../../images/ConnexionPage/image-fond-page-connexion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.background_image::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backdrop-filter: blur(13px);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.register_block {
+    z-index: 2;
+    text-align: center;
+    width: 956px;
+    height: 666px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    position: relative;
+}
+
+a, h3 {
+    color: white;
+}
+
+a {
+    position: absolute;
+    top: 25px;
+    left: 46px;
+    font-family: 'Avenir_Heavy';
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h3 {
+    position: absolute;
+    top: 25px;
+    left: 45%;
+    font-family: 'Avenir_Heavy';
+    font-size: 27px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 42.5px;
+    margin-top: 75px;
+}
+
+input[type=text], input[type=password] {
+    width: 367px;
+    height: 47px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 14.5px;
+    font-family: "Avenir_Light";
+    font-size: 16px;
+}
+
+.form_input {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form_input > p {
+    color: white;
+    margin-top: 54px;
+    font-family: "Avenir_Medium";
+    font-size: 13px;
+}
+
+.register_block_separator {
+    height: 519px;
+    border: 2px solid #707070;
+    margin-left: 25.5px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 367px;
+    height: 40px;
+    padding-left: 17%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: 'Avenir_Medium';
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button_google {
+    background-color: #D64D3B;
+}
+
+.button_apple {
+    background-color: black;
+    margin-bottom: 13px;
+}
+
+.register_block_right {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    align-items: center;
+}
+
+.register_block_right > p {
+    color: white;
+    font-family: 'Avenir_Light';
+    font-size: 14px;
+}
+.register_block_right > p:first-child {
+    font-family: 'Avenir_Medium';
+    font-size: 12px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.register_checkbox {
+    position: absolute;
+    top: 33px;
+    left: -156px;
+    transform: translate(-100%, -50%);
+    height: 19px;
+    width: 18px;
+    background-color: transparent;
+    border: solid white 1px;
+    border-radius: 4px;
+}
+
+.container input:checked + .register_checkbox {
+	border: solid 1px green;
+}
+
+.register_checkbox:after {
+    content: "\2713";
+    left: 2px;
+    top: 0;
+    font-size: 21px;
+    position: absolute;
+    display: none;
+}
+
+.container input:checked + .register_checkbox:after{
+    display: block;
+}
+
+.container input:checked + .register_checkbox:after {
+    color: green;
+}
+
+input[type=submit] {
+    width: 237px;
+    height: 46px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: "Avenir_Heavy";
+    font-size: 19px;
+    margin-top: 21px;
+    cursor: pointer;
+}
+
+
+/* Font Family */
+
+@font-face {
+    font-family: "Avenir_Light";
+    src: url("../Metropolis/Metropolis-Light.otf");
+}
+
+@font-face {
+    font-family: "Avenir_Medium";
+    src: url("../Metropolis/Metropolis-Medium.otf");
+}
+
+@font-face {
+    font-family: "Avenir_Heavy";
+    src: url("../Metropolis/Metropolis-SemiBold.otf");
+}
