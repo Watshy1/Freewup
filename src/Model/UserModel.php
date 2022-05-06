@@ -7,13 +7,16 @@ use PDO;
 
 class UserModel extends Model
 {
-    public function createUser(string $nickname, string $email, string $password)
+    public function createUser(string $firstname, string $lastname, string $email, string $password, int $phone_number, int $date_of_birth)
     {
-        $statement = $this->pdo->prepare('INSERT INTO `user`(`nickname`, `email`, `password`) VALUES (:nickname, :email, :password)');
+        $statement = $this->pdo->prepare('INSERT INTO `user`(`firstname`, `lastname`, `email`, `password`, `phone_number`, `date_of_birth`) VALUES (:firstname, :lastname, :email, :password, :phone_number, :date_of_birth)');
         $statement->execute([
-            'nickname' => $nickname,
+            'firstname' => $firstname,
+            'lastname' => $lastname,
             'email' => $email,
-            'password' => $password
+            'password' => $password,
+            'phone_number' => $phone_number,
+            'date_of_birth' => $date_of_birth
         ]);
     }
 
@@ -27,11 +30,10 @@ class UserModel extends Model
         return $statement->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function doesExist(string $nickname, string $email)
+    public function doesExist(string $email)
     {
-        $statement = $this->pdo->prepare('SELECT * FROM `user` WHERE `nickname` = :nickname OR `email` = :email');
+        $statement = $this->pdo->prepare('SELECT * FROM `user` WHERE  `email` = :email');
         $statement->execute([
-            'nickname' => $nickname,
             'email' => $email
         ]);
 

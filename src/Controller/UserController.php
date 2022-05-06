@@ -18,12 +18,12 @@ class UserController extends Controller
 
     public function register()
     {
-        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['nickname']) && isset($_POST['email']) && isset($_POST['password']))
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['phone_number']) && isset($_POST['date_of_birth']) && !empty($_POST['email']) && !empty($_POST['password']) && $_POST['password'] === $_POST['password_verif'] && $_POST['email'] === $_POST['email_verif'])
         {
-            $doesExit = $this->userModel->doesExist($_POST['nickname'], $_POST['email']);
+            $doesExit = $this->userModel->doesExist($_POST['email']);
 
             if ($doesExit === false) {
-                $this->userModel->createUser($_POST['nickname'], $_POST['email'], password_hash($_POST['password'], PASSWORD_DEFAULT));
+                $this->userModel->createUser($_POST['firstname'], $_POST['lastname'], $_POST['email'], password_hash($_POST['password'], PASSWORD_DEFAULT), intval($_POST['phone_number']), intval($_POST['date_of_birth']));
 
                 header('Location: /login');
                 exit;
