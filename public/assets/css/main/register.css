@@ -10,7 +10,7 @@ body {
 .background_image {
     position: relative;
     height: 100%;
-    background-image: url(../../images/ConnexionPage/image-fond-page-connexion.jpg);
+    background-image: url(../../images/ConnexionRegisterPage/image-fond-page-connexion.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

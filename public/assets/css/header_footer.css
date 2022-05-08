@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    gap: 409.5px;
+}
+
+.header_left {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+}
+
+.header_separator {
+    height: 38.5px;
+    border: 2px solid black;
+}

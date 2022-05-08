@@ -5,11 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/header_footer.css">
     {% block css %}{% endblock %}
     {% block script %}{% endblock %}
     <title>Freew'up</title>
 </head>
 <body>
+    <header>
+        <div class="header_left">
+            <img src="assets/images/main/logo-freewup-black.png" alt="logo Freew'up"></img>
+            <div class="header_separator"></div>
+            <nav>
+                <ul>
+                    <li>Accueil</li>
+                    <li>Auteur</li>
+                    <li>Blog</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_right">
+            
+        </div>
+    </header>
     {% block main %}{% endblock %}
 </body>
 </html>
