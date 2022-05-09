@@ -65,7 +65,7 @@ input[type=text], input[type=password] {
 }
 
 .hide_show_password {
-    background-image: url(../../images/ConnexionPage/hide.png);
+    background-image: url(../../images/ConnexionRegisterPage/hide.png);
     background-size: cover;
     width: 25px;
     height: 25px;

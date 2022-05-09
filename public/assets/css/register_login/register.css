@@ -90,10 +90,33 @@ input[type=text], input[type=password] {
     font-size: 16px;
 }
 
+.hide_show_password {
+    background-image: url(../../images/ConnexionRegisterPage/hide.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 247px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.hide_show_password_verif {
+    background-image: url(../../images/ConnexionRegisterPage/hide.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 182px;
+    right: 10px;
+    cursor: pointer;
+}
+
 .form_input {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    position: relative;
 }
 
 .form_input > p {
