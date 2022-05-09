@@ -96,7 +96,7 @@ input[type=text], input[type=password] {
     width: 25px;
     height: 25px;
     position: absolute;
-    bottom: 247px;
+    bottom: 249px;
     right: 10px;
     cursor: pointer;
 }
@@ -107,7 +107,7 @@ input[type=text], input[type=password] {
     width: 25px;
     height: 25px;
     position: absolute;
-    bottom: 182px;
+    bottom: 183px;
     right: 10px;
     cursor: pointer;
 }
