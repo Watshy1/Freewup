@@ -1,10 +1,37 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 header {
     display: flex;
+    align-items: center;
     gap: 409.5px;
+    padding: 13px 150px;
 }
 
 .header_left {
     display: flex;
+    align-items: center;
+    gap: 62.5px;
+}
+
+.header_left > nav > ul > li {
+    cursor: pointer;
+}
+
+.header_left > nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.header_left > a > img {
+    width: 194px;
+}
+
+.header_left > a {
+    cursor: pointer;
 }
 
 nav ul {
@@ -20,4 +47,101 @@ nav ul {
 
 .header_right {
     display: flex;
+    gap: 54px;
+}
+
+.header_right > input {
+    height: 31px;
+    width: 252px;
+}
+
+.header_right_actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#add_post {
+    width: 34px;
+    height: 34px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#add_post > i {
+    margin-bottom: 10px;
+}
+
+#heart {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#private_message {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: url(../../images/main/photo-de-profile.jpg);
+    background-position: center -10px;
+    background-size: 60px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.user_panel {
+    display: none;
+    flex-direction: column;
+    gap: 22px;
+    background-color: white;
+    position: absolute;
+    top: 110px;
+    right: 90px;
+    padding: 20px 40px;
+    z-index: 100;
+}
+
+.user_panel::before {
+    position: absolute;
+    top: -36px;
+    right: 44px;
+    content: "";
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-right : 21px solid transparent;
+    border-bottom : 36px solid white;
+    border-left : 21px solid transparent;
+    z-index: 100;
+}
+
+.user_panel > div {
+    display: flex;
+    gap: 10px;
+}
+
+.user_panel > div > a {
+    color: black;
+    text-decoration: none;
+}
+
+.user_panel > div:last-child {
+    color: red;
+}
+
+.user_panel > div:last-child > a {
+    color: red;
+    text-decoration: none;
 }

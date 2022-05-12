@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/main/header_footer.css">
+    <script src="https://kit.fontawesome.com/2fc22ca3fa.js" crossorigin="anonymous"></script>
+    <script src="assets/JavaScript/main/header_footer.js"></script>
     {% block css %}{% endblock %}
     {% block script %}{% endblock %}
     <title>Freew'up</title>
@@ -13,11 +15,11 @@
 <body>
     <header>
         <div class="header_left">
-            <img src="assets/images/main/logo-freewup-black.png" alt="logo Freew'up"></img>
+            <a href="/"><img src="assets/images/main/logo-freewup-black.png" alt="logo Freew'up"></img></a>
             <div class="header_separator"></div>
             <nav>
                 <ul>
-                    <li>Accueil</li>
+                    <li><a href="/">Accueil</a></li>
                     <li>Auteur</li>
                     <li>Blog</li>
                 </ul>
@@ -26,12 +28,28 @@
         <div class="header_right">
             <input placeholder="Rechercher">
             <div class="header_separator"></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div id="profile"></div>
+            <div class="header_right_actions">
+                <div id="add_post"><i class="fa-regular fa-plus fa-2xl"></i></div>
+                <div id="heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
+                <div id="private_message"><i class="fa-regular fa-message fa-2xl"></i></div>
+                <div id="profile"></div>
+            </div>
         </div>
     </header>
+    <div class="user_panel" style="display: none;">
+        <div>
+            <i class="fa-regular fa-user"></i>
+            <a href="">Profil</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-gear"></i>
+            <a href="">Paramètres</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <a href="/logout">Déconnexion</a>
+        </div>
+    </div>
     {% block main %}{% endblock %}
 </body>
 </html>
