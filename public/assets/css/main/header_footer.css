@@ -21,3 +21,107 @@ nav ul {
 .header_right {
     display: flex;
 }
+
+footer {
+    height: 353px;
+    width: 100%;
+}
+
+.footer-top {
+    display: flex;
+    gap: 70px;
+    background-color: #8CA285;
+    padding: 45px 161.5px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    justify-content: center;
+}
+
+.socials-medias {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.middle {
+    display: flex;
+    gap: 30px;
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content-left > a {
+    font-size: 25px;
+}
+
+.bar {
+    border: 1px solid white;
+}
+
+.content-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content-middle > a {
+    font-size: 25px;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content-right > a {
+    font-size: 25px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.right > a {
+    font-size: 25px;
+}
+
+.right > a {
+    font-size: 25px;
+}
+
+.right > div > a {
+    font-size: 25px;
+}
+
+.number, .email{
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: double;
+    color: white;
+}
+
+.footer-down {
+    background-color: #013B0C;
+    padding: 22.5px 0;
+}
+
+.footer-down > p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
