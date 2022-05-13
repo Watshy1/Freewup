@@ -4,6 +4,8 @@ body {
     flex-direction: column;
 }
 
+/* Header */
+
 header {
     display: flex;
     align-items: center;
@@ -146,6 +148,7 @@ nav ul {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 footer {
     height: 353px;
     width: 100%;
@@ -248,4 +251,25 @@ a {
     display: flex;
     justify-content: center;
     font-size: 15px;
+=======
+/* Footer */
+
+
+
+/* Font Family */
+
+@font-face {
+    font-family: "SF_pro_heavy";
+    src: url("../main/Font/FontsFree-Net-SFProText-Heavy-1.ttf");
+}
+
+@font-face {
+    font-family: "SF_pro_regular";
+    src: url("../main/Font/FontsFree-Net-SFProText-Regular-1.ttf");
+}
+
+@font-face {
+    font-family: "SF_pro_light";
+    src: url("../main/Font/FontsFree-Net-SFProText-Light-1.ttf");
+>>>>>>> william
 }
