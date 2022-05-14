@@ -12,11 +12,6 @@ class PageController extends Controller
         parent::__construct();
     }
 
-    public function HomePage()
-    {
-        echo $this->twig->render('main/home.html.twig');
-    }
-
     public function RegisterPage()
     {
         echo $this->twig->render('register_login/register.html.twig');

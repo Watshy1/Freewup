@@ -9,7 +9,10 @@ class Controller
     public function __construct()
     {
         $loader = new \Twig\Loader\FilesystemLoader('../src/View');
-        $this->twig = new \Twig\Environment($loader);
+        $this->twig = new \Twig\Environment($loader, [
+            'debug' => true,
+        ]);
+        $this->twig->addExtension(new \Twig\Extension\DebugExtension());
     }
 }
 

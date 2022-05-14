@@ -27,7 +27,7 @@ $router->before('GET|POST', '/register', function() {
     }
 });
 
-$router->get('/', 'Mvc\Controller\PageController@HomePage');
+$router->get('/', 'Mvc\Controller\ArticleController@show4lastArticles');
 
 $router->get('/register', 'Mvc\Controller\PageController@RegisterPage');
 $router->post('/register', 'Mvc\Controller\UserController@register');
