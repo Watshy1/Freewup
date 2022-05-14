@@ -24,15 +24,60 @@
     </div>
 
     <main>
-        <h2>Economie :</h2>
-        {{ economie.0.title }}
-        <br>
-        <br>
-        <h2>Transport :</h2>
-        {{ transport.0.title }}
-        <br>
-        <br>
-        <h2>Politique :</h2>
-        {{ politique.0.title }}
+        <div class="category_economy">
+            <h1>Économie</h1>
+            <div class="category_economy_block">
+                <div>
+                    <p>{{ economie.0.title }}</p>
+                </div>
+                <div>
+                    <p>{{ economie.1.title }}</p>
+                </div>
+                <div>
+                    <p>{{ economie.2.title }}</p>
+                </div>
+                <div>
+                    <p>{{ economie.3.title }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="category_transport">
+            <h1>Transports</h1>
+            <div class="category_transport_block">
+                <div>
+                    <p>{{ transport.0.title }}</p>
+                </div>
+                <div>
+                    <p>{{ transport.1.title }}</p>
+                </div>
+                <div>
+                    <p>{{ transport.2.title }}</p>
+                </div>
+                <div>
+                    <p>{{ transport.3.title }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="category_politics">
+            <h1>Politique</h1>
+            <div class="category_politics_block">
+                <div>
+                    <p>{{ politique.0.title }}</p>
+                </div>
+                <div>
+                    <p>{{ politique.1.title }}</p>
+                </div>
+                <div>
+                    <p>{{ politique.2.title }}</p>
+                </div>
+                <div>
+                    <p>{{ politique.3.title }}</p>
+                </div>
+            </div>
+        </div>
+        <button>
+            <p>Charger plus d'articles</p>
+            <i class="fa-solid fa-3x fa-chevron-down"></i>
+        </button>
     </main>
 {% endblock %}
