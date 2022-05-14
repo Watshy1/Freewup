@@ -196,6 +196,12 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 61px;
+    font-family: "SF_pro_light";
+    font-size: 22px;
+}
+
+.footer_top_link_block:first-child {
+    font-family: "SF_pro_semiBold";
 }
 
 .footer_top_link_block > a {
@@ -212,8 +218,17 @@ footer {
 .footer_top_info {
     display: flex;
     flex-direction: column;
-    gap: 51px;
+    gap: 56px;
     color: white;
+    font-size: 22px;
+}
+
+.footer_top_info > div > p {
+    font-family: "SF_pro_light";
+}
+
+.footer_top_info > p {
+    font-family: "SF_pro_semiBold";
 }
 
 .footer_top_info > div {
@@ -234,6 +249,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 7px;
+}
+
+.footer_top_info_langue > p {
+    font-family: "SF_pro_light";
+    font-size: 20px;
 }
 
 .footer_top_info_langue > select {
@@ -241,6 +262,8 @@ footer {
     color: white;
     background: transparent;
     border: 0;
+    font-family: "SF_pro_medium";
+    font-size: 22px;
 }
 
 .footer_top_info_langue_separator {
@@ -263,20 +286,25 @@ footer {
 
 @font-face {
     font-family: "SF_pro_heavy";
-    src: url("../main/Font/FontsFree-Net-SFProText-Heavy-1.ttf");
+    src: url(Font/FontsFree-Net-SFProText-Heavy-1.ttf);
 }
 
 @font-face {
     font-family: "SF_pro_regular";
-    src: url("../main/Font/FontsFree-Net-SFProText-Regular-1.ttf");
+    src: url(Font/FontsFree-Net-SFProText-Regular-1.ttf);
 }
 
 @font-face {
     font-family: "SF_pro_bold";
-    src: url("../main/Font/FontsFree-Net-SFProText-Bold-1.ttf");
+    src: url(Font/FontsFree-Net-SFProText-Bold-1.ttf);
 }
 
 @font-face {
     font-family: "SF_pro_light";
-    src: url("../main/Font/FontsFree-Net-SFProText-Light-1.ttf");
+    src: url(Font/FontsFree-Net-SFProText-Light-1.ttf);
+}
+
+@font-face {
+    font-family: "SF_pro_semiBold";
+    src: url(Font/FontsFree-Net-SFProDisplay-Semibold.ttf);
 }

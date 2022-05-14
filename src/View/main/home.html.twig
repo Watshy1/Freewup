@@ -1,11 +1,25 @@
 {% extends 'main/base.html.twig' %}
 
 {% block css %}
-    <link rel="stylesheet" href="assets/css/main/home.css"> {# Créer le fichier css #}
+    <link rel="stylesheet" href="assets/css/main/home.css">
 {% endblock %}
 
 {% block main %}
-    <main class="main">
-        <h1>Home Page</h1>
-    </main>
+    <div class="heading">
+        <img src="assets/images/main/logo-freewup-white.png" alt="logo_freewup">
+        <div>
+            <p>Catégories recommandées :</p>
+            <div class="heading_categories">
+                <button>Sport</button>
+                <button>Économie</button>
+                <button>Musique</button>
+                <button>Cuisine</button>
+                <button>Éducation</button>
+                <button>Médecine</button>
+                <button>Politique</button>
+                <button>Business</button>
+                <button>Webdesign</button>
+            </div>
+        </div>
+    </div>
 {% endblock %}
