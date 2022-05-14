@@ -10,7 +10,7 @@ header {
     display: flex;
     align-items: center;
     gap: 409.5px;
-    padding: 13px 150px;
+    padding: 13px 0;
 }
 
 .header_left {
@@ -26,6 +26,8 @@ header {
 .header_left > nav > ul > li > a {
     text-decoration: none;
     color: black;
+    font-family: "SF_pro_regular";
+    font-size: 19px;
 }
 
 .header_left > a > img {
@@ -55,6 +57,8 @@ nav ul {
 .header_right > input {
     height: 31px;
     width: 252px;
+    font-family: "SF_pro_light";
+    font-size: 20px;
 }
 
 .header_right_actions {
@@ -150,7 +154,110 @@ nav ul {
 
 /* Footer */
 
+footer {
+    width: 100vw;
+}
 
+.footer_top {
+    height: 353px;
+    background-color: #8CA285;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 63.1px;
+}
+
+.footer_top_media {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+}
+
+.footer_top_media > img {
+    height: 88px;
+}
+
+.footer_top_media > div > img {
+    height: 54px;
+}
+
+.footer_top_media_social {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.footer_top_link {
+    display: flex;
+    gap: 26.6px;
+}
+
+.footer_top_link_block {
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+}
+
+.footer_top_link_block > a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_top_link_separator {
+    height: 269px;
+    width: 0px;
+    border: 1px solid white;
+}
+
+.footer_top_info {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    color: white;
+}
+
+.footer_top_info > div {
+    display: flex;
+    gap: 18.5px;
+}
+
+.footer_top_info > div > i {
+    color: black;
+    height: 21px;
+}
+
+.footer_top_info_langue {
+    width: 380px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_top_info_langue > select {
+    width: 255px;
+    color: white;
+    background: transparent;
+    border: 0;
+}
+
+.footer_top_info_langue_separator {
+    height: 39px;
+    border: 1px solid white;
+}
+
+.footer_bottom {
+    height: 45px;
+    background-color: #013B0C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: "SF_pro_bold";
+}
 
 /* Font Family */
 
@@ -162,6 +269,11 @@ nav ul {
 @font-face {
     font-family: "SF_pro_regular";
     src: url("../main/Font/FontsFree-Net-SFProText-Regular-1.ttf");
+}
+
+@font-face {
+    font-family: "SF_pro_bold";
+    src: url("../main/Font/FontsFree-Net-SFProText-Bold-1.ttf");
 }
 
 @font-face {
