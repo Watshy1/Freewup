@@ -1,0 +1,19 @@
+{% extends 'main/base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="assets/css/main/createArticle.css">
+{% endblock %}
+
+{% block main %}
+
+    <form method="post" action="" id="createArticle">
+        <input type="text" name="title" placeholder="Titre">
+        <input type="text" name="subtitle" placeholder="Sous-titre">
+        <input type="text" name="category" placeholder="Catégories, Accept only : politique / transport / economie">
+        <input type="text" name="banner" placeholder="Bannière">
+        <input type="text" name="description" placeholder="Description">
+        <textarea name="content" rows="20" cols="120" form="createArticle" placeholder="Contenu"></textarea>
+        <input type="submit" value="Publier">
+    </form>
+
+{% endblock %}

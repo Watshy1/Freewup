@@ -37,6 +37,9 @@ $router->post('/login', 'Mvc\Controller\UserController@login');
 
 $router->get('/logout', 'Mvc\Controller\UserController@logout');
 
+$router->get('/createArticle', 'Mvc\Controller\ArticleController@createArticle');
+$router->post('/createArticle', 'Mvc\Controller\ArticleController@createArticle');
+
 $router->get('/author', 'Mvc\Controller\PageController@AuthorPage');
 
 $router->get('/blog', 'Mvc\Controller\PageController@BlogPage');

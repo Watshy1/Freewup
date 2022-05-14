@@ -43,7 +43,11 @@ class UserController extends Controller
                 $_SESSION['user'] = [
                     'id' => $user['id'],
                     'nickname' => $user['nickname'],
-                    'email' => $user['email']
+                    'firstname' => $user['firstname'],
+                    'lastname' => $user['lastname'],
+                    'email' => $user['email'],
+                    'phone_number' => $user['phone_number'],
+                    'date_of_birth' => $user['date_of_birth']
                 ];
 
                 header('Location: /');
