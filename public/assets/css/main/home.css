@@ -79,6 +79,7 @@ main h1 {
     font-size: 28px;
     font-family: "Avenir_Heavy";
     line-height: 35px;
+    cursor: pointer;
 }
 
 .category_economy_block > div > p, .category_transport_block > div > p, .category_politics_block > div > p {

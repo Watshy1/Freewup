@@ -48,7 +48,15 @@ class ArticleModel extends Model
         ]);
     }
 
+    // Show Article By Id
+
+    public function showArticle($id)
+    {
+        $statement = $this->pdo->prepare('SELECT * FROM `article` WHERE `id` = :id');
+        $statement->execute([
+            'id' => $id
+        ]);
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 }
-
-
-// INSERT INTO `article` (`id`, `title`, `subtitle`, `description`, `content`, `category`, `background_banner`, `userid`) VALUES (NULL, 'titre test', 'sous titre test', 'description test', 'content test', 'transport', 'banner test', '8');

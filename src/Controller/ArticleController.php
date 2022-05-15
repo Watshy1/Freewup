@@ -44,6 +44,21 @@ class ArticleController extends Controller
 
         echo $this->twig->render('main/createArticle.html.twig');
     }
+
+    public function showArticle($id)
+    {
+        $article = $this->articleModel->showArticle($id);
+        
+        if (empty($article)) {
+            header('Location: /');
+            exit();
+        }
+
+        echo $this->twig->render('main/article.html.twig', [
+            'article' => $article,
+        ]);
+
+    }
 }
 
 ?>

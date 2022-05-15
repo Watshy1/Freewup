@@ -1,12 +1,12 @@
 {% extends 'main/base.html.twig' %}
 
 {% block css %}
-    <link rel="stylesheet" href="assets/css/main/home.css">
+    <link rel="stylesheet" href="/assets/css/main/home.css">
 {% endblock %}
 
 {% block main %}
     <div class="heading">
-        <img src="assets/images/main/logo-freewup-white.png" alt="logo_freewup">
+        <img src="/assets/images/main/logo-freewup-white.png" alt="logo_freewup">
         <div>
             <p>Catégories recommandées :</p>
             <div class="heading_categories">
@@ -27,16 +27,16 @@
         <div class="category_economy">
             <h1>Économie</h1>
             <div class="category_economy_block">
-                <div>
+                <div onclick="location.href='article/{{ economie.0.id }}'">
                     <p>{{ economie.0.title }}</p>
                 </div>
-                <div>
+                <div onclick="location.href='article/{{ economie.1.id }}'">
                     <p>{{ economie.1.title }}</p>
                 </div>
-                <div>
+                <div onclick="location.href='article/{{ economie.2.id }}'">
                     <p>{{ economie.2.title }}</p>
                 </div>
-                <div>
+                <div onclick="location.href='article/{{ economie.3.id }}'">
                     <p>{{ economie.3.title }}</p>
                 </div>
             </div>
@@ -44,16 +44,16 @@
         <div class="category_transport">
             <h1>Transports</h1>
             <div class="category_transport_block">
-                <div>
+                <div onclick="location.href='article/{{ transport.0.id }}'">
                     <p>{{ transport.0.title }}</p>
                 </div>
-                <div>
+                <div onclick="location.href='article/{{ transport.1.id }}'">
                     <p>{{ transport.1.title }}</p>
                 </div>
-                <div>
+                <div onclick="location.href='article/{{ transport.2.id }}'">
                     <p>{{ transport.2.title }}</p>
                 </div>
-                <div>
+                <div onclick="location.href='article/{{ transport.3.id }}'">
                     <p>{{ transport.3.title }}</p>
                 </div>
             </div>
@@ -61,16 +61,16 @@
         <div class="category_politics">
             <h1>Politique</h1>
             <div class="category_politics_block">
-                <div>
+                <div onclick="location.href='article/{{ politique.0.id }}'">
                     <p>{{ politique.0.title }}</p>
                 </div>
-                <div>
+                <div onclick="location.href='article/{{ politique.1.id }}'">
                     <p>{{ politique.1.title }}</p>
                 </div>
-                <div>
+                <div onclick="location.href='article/{{ politique.2.id }}'">
                     <p>{{ politique.2.title }}</p>
                 </div>
-                <div>
+                <div onclick="location.href='article/{{ politique.3.id }}'">
                     <p>{{ politique.3.title }}</p>
                 </div>
             </div>

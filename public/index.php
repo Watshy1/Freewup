@@ -13,6 +13,13 @@ $router->before('GET|POST', '/', function() {
     }
 });
 
+$router->before('GET|POST', '/article/(\d+)', function() {
+    if (!isset($_SESSION['user'])) {
+        header('location: /login');
+        exit;
+    }
+});
+
 $router->before('GET|POST', '/login', function() {
     if (isset($_SESSION['user'])) {
         header('location: /');
@@ -27,7 +34,14 @@ $router->before('GET|POST', '/register', function() {
     }
 });
 
+$router->before('GET|POST', '/article/', function() {
+    header('location: /');
+    exit;
+});
+
 $router->get('/', 'Mvc\Controller\ArticleController@show4lastArticles');
+
+$router->get('/article/(\d+)', 'Mvc\Controller\ArticleController@showArticle');
 
 $router->get('/register', 'Mvc\Controller\PageController@RegisterPage');
 $router->post('/register', 'Mvc\Controller\UserController@register');
