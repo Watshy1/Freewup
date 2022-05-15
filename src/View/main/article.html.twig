@@ -25,7 +25,9 @@
         <div class="article_content">
             <p>{{ article.0.content }}</p>
         </div>
-        <img src="/ImageArticle/{{ article.0.image }}">
+        {% if article.0.image %}
+            <img src="/ImageArticle/{{ article.0.image }}">
+        {% endif %}
     </main>
 
 {% endblock %}
