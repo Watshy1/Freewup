@@ -90,6 +90,12 @@ main {
     font-size: 30px;
     line-height: 36px;
     white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+main > img {
+    max-height: 750px;
+    object-fit: contain;
 }
 
 
