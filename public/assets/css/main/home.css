@@ -99,7 +99,7 @@ main h1 {
     gap: 35px;
     height: 543px;
     width: 100vw;
-    background-image: url("https://via.placeholder.com/1920/540");
+    background-image: url("https://via.placeholder.com/1920x540");
 }
 
 .category_transport {
@@ -110,7 +110,7 @@ main h1 {
     gap: 35px;
     height: 543px;
     width: 100vw;
-    background-image: url("https://via.placeholder.com/1920/540");
+    background-image: url("https://via.placeholder.com/1920x540");
 }
 
 .category_politics {
@@ -121,7 +121,7 @@ main h1 {
     gap: 35px;
     height: 543px;
     width: 100vw;
-    background-image: url("https://via.placeholder.com/1920/540");
+    background-image: url("https://via.placeholder.com/1920x540");
 }
 
 main > button {

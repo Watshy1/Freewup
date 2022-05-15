@@ -6,13 +6,14 @@
 
 {% block main %}
 
-    <form method="post" action="" id="createArticle">
+    <form method="post" action="" id="createArticle" enctype="multipart/form-data">
         <input type="text" name="title" placeholder="Titre">
         <input type="text" name="subtitle" placeholder="Sous-titre">
         <input type="text" name="category" placeholder="Catégories, Accept only : politique / transport / economie">
         <input type="text" name="banner" placeholder="Bannière">
-        <input type="text" name="description" placeholder="Description">
+        <textarea name="description" rows="10" cols="120" form="createArticle" placeholder="Description"></textarea>
         <textarea name="content" rows="20" cols="120" form="createArticle" placeholder="Contenu"></textarea>
+        <input type="file" name="uploadedFile">
         <input type="submit" value="Publier">
     </form>
 

@@ -37,7 +37,12 @@ class ArticleController extends Controller
 
             if (isset($_POST['title']) && isset($_POST['subtitle']) && isset($_POST['description']) && isset($_POST['content']) && isset($category) && ($category === 'transport' || $category === 'politique' || $category === 'economie') && !empty($_POST['title']) && !empty($_POST['subtitle']) && !empty($_POST['description']) && !empty($_POST['content'])) {
                 
-                $this->articleModel->createArticle($_POST['title'], $_POST['subtitle'], $_POST['description'], $_POST['content'], $category, $_POST['banner'], $_SESSION['user']['id']);
+                $this->articleModel->createArticle($_POST['title'], $_POST['subtitle'], $_POST['description'], $_POST['content'], $category, $_POST['banner'], $_SESSION['user']['id'], $_FILES["uploadedFile"]["name"]);
+
+                $from = $_FILES["uploadedFile"]["tmp_name"];
+                $to = 'ImageArticle/' . basename($_FILES["uploadedFile"]["name"]);
+
+                move_uploaded_file($from, $to);
 
             } 
         }
@@ -48,6 +53,8 @@ class ArticleController extends Controller
     public function showArticle($id)
     {
         $article = $this->articleModel->showArticle($id);
+
+        $userInfo = $this->articleModel->findUser($article[0]['userid']);
         
         if (empty($article)) {
             header('Location: /');
@@ -56,6 +63,7 @@ class ArticleController extends Controller
 
         echo $this->twig->render('main/article.html.twig', [
             'article' => $article,
+            'userInfo' => $userInfo,
         ]);
 
     }

@@ -3,3 +3,16 @@ form {
     flex-direction: column;
     gap: 10px;
 }
+
+form > textarea {
+    min-width: 982px;
+    max-width: 982px;
+}
+
+form > textarea[name="content"] {
+    min-height: 316px;
+}
+
+form > textarea[name="description"] {
+    min-height: 154px;
+}

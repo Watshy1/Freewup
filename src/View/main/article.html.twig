@@ -8,8 +8,24 @@
 
     <main>
         <div class="user">
-            
+            <div class="user_image"></div>
+            <div class="user_info">
+                <p>{{ userInfo.0.firstname }} {{ userInfo.0.lastname }}</p>
+                <div class="user_info_separator"></div>
+                <p>Posté le {{ article.0.create_at }}</p>
+            </div>
         </div>
+        <div class="article_title">
+            <h1>{{ article.0.title }}</h1>
+        </div>
+        <div class="article_pre_content">
+            <h2>{{ article.0.subtitle }}</h2>
+            <p>{{ article.0.description }}</p>
+        </div>
+        <div class="article_content">
+            <p>{{ article.0.content }}</p>
+        </div>
+        <img src="/ImageArticle/{{ article.0.image }}">
     </main>
 
 {% endblock %}
