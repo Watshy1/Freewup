@@ -4,6 +4,10 @@
     <link rel="stylesheet" href="/assets/css/main/home.css">
 {% endblock %}
 
+{% block script %}
+    <script src="/assets/JavaScript/main/home.js"></script>
+{% endblock %}
+
 {% block main %}
     <div class="heading">
         <img src="/assets/images/main/logo-freewup-white.png" alt="logo_freewup">
@@ -75,9 +79,9 @@
                 </div>
             </div>
         </div>
-        <button>
-            <p>Charger plus d'articles</p>
-            <i class="fa-solid fa-3x fa-chevron-down"></i>
+        <button class="more_article">
+            <p class="more_article_text">Charger plus d'articles</p>
+            <i id="more_article_arrow" class="fa-solid fa-3x fa-chevron-down"></i>
         </button>
     </main>
 {% endblock %}

@@ -138,6 +138,83 @@ main > button > p {
     font-family: "Avenir_Heavy";
 }
 
+/* Animation */
+
+.more_article:hover {
+    background-color: black;
+}
+
+.more_article:hover > p {
+    color: white;
+    position: relative;
+    top: 0;
+    animation-name : TextAnimation;
+    animation-duration : 0.4s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+.more_article:not(:hover) > p {
+    color: black;
+    position: relative;
+    top: 0;
+    animation-name : TextAnimationReverse;
+    animation-duration : 0.4s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+.more_article:hover > i {
+    position: relative;
+    top: 0;
+    animation-name : ArrowAnimation;
+    animation-duration : 0.4s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+.more_article:not(:hover) > i {
+    position: relative;
+    top: 40px;
+    animation-name : ArrowAnimationReverse;
+    animation-duration : 0.4s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+@keyframes ArrowAnimation {
+    from {
+        top: 0;
+    } to {
+        top: 40px;
+    }
+}
+
+@keyframes ArrowAnimationReverse {
+    from {
+        top: 40px;
+    } to {
+        top: 0;
+    }
+}
+
+@keyframes TextAnimation {
+    from {
+        top: 0;
+    } to {
+        top: 20px;
+    }
+}
+
+@keyframes TextAnimationReverse {
+    from {
+        top: 20px;
+    } to {
+        top: 0;
+    }
+}
+
+
 /* Font family */
 
 @font-face {
