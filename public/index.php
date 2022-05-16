@@ -43,13 +43,15 @@ $router->get('/', 'Mvc\Controller\ArticleController@show4lastArticles');
 
 $router->get('/article/(\d+)', 'Mvc\Controller\ArticleController@showArticle');
 
-$router->get('/register', 'Mvc\Controller\PageController@RegisterPage');
+$router->get('/register', 'Mvc\Controller\UserController@register');
 $router->post('/register', 'Mvc\Controller\UserController@register');
 
-$router->get('/login', 'Mvc\Controller\PageController@LoginPage');
+$router->get('/login', 'Mvc\Controller\UserController@login');
 $router->post('/login', 'Mvc\Controller\UserController@login');
 
 $router->get('/logout', 'Mvc\Controller\UserController@logout');
+
+$router->get('/profil', 'Mvc\Controller\PageController@ProfilPage');
 
 $router->get('/createArticle', 'Mvc\Controller\ArticleController@createArticle');
 $router->post('/createArticle', 'Mvc\Controller\ArticleController@createArticle');
@@ -59,7 +61,5 @@ $router->get('/author', 'Mvc\Controller\PageController@AuthorPage');
 $router->get('/blog', 'Mvc\Controller\PageController@BlogPage');
 
 $router->get('/privateMessage', 'Mvc\Controller\PageController@PrivateMessagePage');
-
-$router->get('/profil', 'Mvc\Controller\PageController@ProfilPage');
 
 $router->run();
