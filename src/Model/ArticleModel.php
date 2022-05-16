@@ -80,4 +80,32 @@ class ArticleModel extends Model
         return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function findUserLike($user_id, $article_id)
+    {
+        $statement = $this->pdo->prepare('SELECT * FROM `user_as_likes` WHERE `user_id` = :user_id AND `article_id` = :article_id');
+        $statement->execute([
+            'user_id' => $user_id,
+            'article_id' => $article_id
+        ]);
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function addLike($user_id, $article_id)
+    {
+        $statement = $this->pdo->prepare('INSERT INTO `user_as_likes` (`user_id`, `article_id`) VALUES (:user_id, :article_id)');
+        $statement->execute([
+            'user_id' => $user_id,
+            'article_id' => $article_id
+        ]);
+    }
+
+    public function suppLike($user_id, $article_id)
+    {
+        $statement = $this->pdo->prepare('DELETE FROM `user_as_likes` WHERE `user_id` = :user_id AND `article_id` = :article_id');
+        $statement->execute([
+            'user_id' => $user_id,
+            'article_id' => $article_id
+        ]);
+    }
+
 }

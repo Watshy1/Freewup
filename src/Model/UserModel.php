@@ -7,7 +7,7 @@ use PDO;
 
 class UserModel extends Model
 {
-    public function createUser(string $firstname, string $lastname, string $email, string $password, int $phone_number, int $date_of_birth)
+    public function createUser(string $firstname, string $lastname, string $email, string $password, int $phone_number, string $date_of_birth)
     {
         $statement = $this->pdo->prepare('INSERT INTO `user`(`firstname`, `lastname`, `email`, `password`, `phone_number`, `date_of_birth`) VALUES (:firstname, :lastname, :email, :password, :phone_number, :date_of_birth)');
         $statement->execute([
@@ -22,7 +22,7 @@ class UserModel extends Model
 
     public function findOneByEmail(string $entry)
     {
-        $statement = $this->pdo->prepare('SELECT * FROM `user` WHERE `email` = :entry OR `nickname` = :entry');
+        $statement = $this->pdo->prepare('SELECT * FROM `user` WHERE `email` = :entry');
         $statement->execute([
             'entry' => $entry,
         ]);

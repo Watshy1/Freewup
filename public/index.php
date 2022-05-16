@@ -55,5 +55,6 @@ $router->get('/createArticle', 'Mvc\Controller\ArticleController@createArticle')
 $router->post('/createArticle', 'Mvc\Controller\ArticleController@createArticle');
 
 $router->get('/article/(\d+)', 'Mvc\Controller\ArticleController@showArticle');
+$router->post('/article/(\d+)', 'Mvc\Controller\ArticleController@showArticle');
 
 $router->run();
