@@ -74,7 +74,8 @@ main h1 {
     justify-content: center;
     align-items: center;
     width: 300px;
-    height: 300px;
+    height: 150px;
+    border-radius: 30px;
     background-color: white;
     font-size: 28px;
     font-family: "Avenir_Heavy";
@@ -97,9 +98,12 @@ main h1 {
     align-items: center;
     justify-content: center;
     gap: 35px;
-    height: 543px;
+    height: 447px;
     width: 100vw;
-    background-image: url("https://via.placeholder.com/1920x540");
+    background-image: url("../../images/main/vlad-busuioc-xyPxcqh8Tt8-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .category_transport {
@@ -108,9 +112,12 @@ main h1 {
     align-items: center;
     justify-content: center;
     gap: 35px;
-    height: 543px;
+    height: 447px;
     width: 100vw;
-    background-image: url("https://via.placeholder.com/1920x540");
+    background-image: url("../../images/main/kit-suman--vxhOD5_Aeo-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .category_politics {
@@ -119,9 +126,12 @@ main h1 {
     align-items: center;
     justify-content: center;
     gap: 35px;
-    height: 543px;
+    height: 447px;
     width: 100vw;
-    background-image: url("https://via.placeholder.com/1920x540");
+    background-image: url("../../images/main/joakim-honkasalo-DurC25GdOvk-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 main > button {
