@@ -1,0 +1,47 @@
+{% extends 'main/base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="/assets/css/main/admin.css">
+{% endblock %}
+
+
+{% block main %}
+
+    <main>
+        <table>
+            <tr>
+                <td>id</td>
+                <td>create_at</td>
+                <td>title</td>
+                <td>subtitle</td>
+                <td>description</td>
+                <td>content</td>
+                <td>category</td>
+                <td>background_banner</td>
+                <td>image</td>
+                <td>userid</td>
+            </tr>
+            {% for article in articles %}
+                <tr>
+                    <td class="td_style">{{ article.id }}</td>
+                    <td class="td_style">{{ article.create_at }}</td>
+                    <td class="td_style">{{ article.title }}</td>
+                    <td class="td_style">{{ article.subtitle }}</td>
+                    <td class="td_style">{{ article.description }}</td>
+                    <td class="td_style">{{ article.content }}</td>
+                    <td class="td_style">{{ article.category }}</td>
+                    <td class="td_style">{{ article.background_banner }}</td>
+                    <td class="td_style">{{ article.image }}</td>
+                    <td class="td_style">{{ article.userid }}</td>
+                    <td class="td_style">
+                        <form method="get" action="/deleteArticle/{{ article.id }}">
+                            <button>DELETE</button>
+                        </form>
+                    </td>
+                </tr>
+                {% set number = number + 1 %}
+            {% endfor %}
+        </table>
+    </main>
+
+{% endblock %}

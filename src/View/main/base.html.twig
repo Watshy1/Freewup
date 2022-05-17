@@ -16,6 +16,13 @@
     <header>
         <div class="header_left">
             <a href="/"><img src="/assets/images/main/logo-freewup-black.png" alt="logo Freew'up"></a>
+            {% if session.user.role == 'admin' %}
+                <nav>
+                    <ul>
+                        <li><a href="/admin">Admin Page</a></li>
+                    </ul>
+                </nav>
+            {% endif %}
         </div>
         <div class="header_right">
             <input placeholder="Rechercher">

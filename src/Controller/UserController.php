@@ -42,6 +42,7 @@ class UserController extends Controller
             if ($user && password_verify($_POST['password'], $user['password'])) {
                 $_SESSION['user'] = [
                     'id' => $user['id'],
+                    'role' => $user['role'],
                     'firstname' => $user['firstname'],
                     'lastname' => $user['lastname'],
                     'email' => $user['email'],

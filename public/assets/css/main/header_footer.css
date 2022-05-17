@@ -17,7 +17,7 @@ header {
 .header_left {
     display: flex;
     align-items: center;
-    gap: 62.5px;
+    gap: 40px;
 }
 
 .header_left > a > img {
@@ -26,6 +26,13 @@ header {
 
 .header_left > a {
     cursor: pointer;
+}
+
+.header_left > nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: "Avenir_medium";
 }
 
 .header_right {

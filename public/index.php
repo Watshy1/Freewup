@@ -39,6 +39,13 @@ $router->before('GET|POST', '/article/', function() {
     exit;
 });
 
+$router->before('GET|POST', '/admin', function() {
+    if ($_SESSION['user']["role"] !== "admin") {
+        header('location: /');
+        exit;
+    }
+});
+
 $router->get('/', 'Mvc\Controller\ArticleController@show4lastArticles');
 
 $router->get('/register', 'Mvc\Controller\UserController@register');
@@ -56,5 +63,9 @@ $router->post('/createArticle', 'Mvc\Controller\ArticleController@createArticle'
 
 $router->get('/article/(\d+)', 'Mvc\Controller\ArticleController@showArticle');
 $router->post('/article/(\d+)', 'Mvc\Controller\ArticleController@showArticle');
+
+$router->get('/admin', 'Mvc\Controller\AdminController@adminPage');
+
+$router->get('/deleteArticle/(\d+)', 'Mvc\Controller\AdminController@deleteArticle');
 
 $router->run();

@@ -1,0 +1,18 @@
+main {
+    padding: 50px 0;
+}
+
+table, table td {
+    border: 1px solid black;
+    text-align: justify;
+}
+
+table {
+    width: 80vw;
+}
+
+.td_style {
+    padding: 10px;
+    height: 100%;
+    vertical-align: middle;
+}
