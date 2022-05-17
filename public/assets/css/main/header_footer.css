@@ -31,6 +31,7 @@ header {
 .header_right {
     display: flex;
     gap: 54px;
+    position: relative;
 }
 
 .header_right > input {
@@ -38,6 +39,14 @@ header {
     width: 252px;
     font-family: "SF_pro_light";
     font-size: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.header_right > i {
+    position: absolute;
+    left: 230px;
+    top: 10px;
 }
 
 .header_right_actions {
