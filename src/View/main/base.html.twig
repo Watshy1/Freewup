@@ -32,7 +32,7 @@
     <div class="user_panel" style="display: none;">
         <div>
             <i class="fa-regular fa-user"></i>
-            <a href="/profil">Profil</a>
+            <a href="/profil/{{ session["user"]["id"] }}">Profil</a>
         </div>
         <div>
             <i class="fa-solid fa-gear"></i>
@@ -59,7 +59,7 @@
                     <a href="/">Accueil</a>
                     <a href="">Page Auteur</a>
                     <a href="">Blog</a>
-                    <a href="/profil">Mon Profil</a>
+                    <a href="/profil/{{ session["user"]["id"] }}">Mon Profil</a>
                 </div>
                 <div class="footer_top_link_separator"></div>
                 <div class="footer_top_link_block">

@@ -49,7 +49,7 @@ $router->post('/login', 'Mvc\Controller\UserController@login');
 
 $router->get('/logout', 'Mvc\Controller\UserController@logout');
 
-$router->get('/profil/(\d+)', 'Mvc\Controller\PageController@ProfilPage');
+$router->get('/profil/(\d+)', 'Mvc\Controller\UserController@profil');
 
 $router->get('/createArticle', 'Mvc\Controller\ArticleController@createArticle');
 $router->post('/createArticle', 'Mvc\Controller\ArticleController@createArticle');

@@ -39,4 +39,10 @@ class UserModel extends Model
 
         return $statement->fetch(PDO::FETCH_ASSOC);
     }
+
+    public function profil()
+    {
+        
+    }
+
 }

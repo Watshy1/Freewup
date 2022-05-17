@@ -56,6 +56,11 @@ class UserController extends Controller
         echo $this->twig->render('register_login/login.html.twig');
     }
 
+    public function profil($id)
+    {
+        echo $this->twig->render('main/profil.html.twig');
+    }
+
     #[NoReturn] public function logout() {
         session_destroy();
         header('Location: /login');

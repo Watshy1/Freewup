@@ -1,0 +1,71 @@
+/* Heading User */
+
+.container_profil {
+    width: 100vw;
+    height: 367px;
+    background-image: url(https://via.placeholder.com/1792x232);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container_profil_info {
+    display: flex;
+    align-items: center;
+    gap: 28.8px;
+    position: absolute;
+    bottom: -141px;
+    left: 268px;
+}
+
+.container_profil_info_image {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-image: url(/assets/images/main/photo-de-profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -10px;
+}
+
+.container_profil_info_perso {
+    display: flex;
+    flex-direction: column;
+    gap: 36.2px;
+}
+
+.container_profil_info_perso > h1 {
+    font-size: 60px;
+}
+
+.container_profil_info_perso > div {
+    display: flex;
+    gap: 28px;
+}
+
+.container_profil_info_perso > div > div > h2 {
+    font-size: 40px;
+}
+
+.container_profil_info_perso > div > div > p {
+    font-size: 17px;
+}
+
+.container_profil_info_perso > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 146px;
+    height: 109px;
+    background-color: #C9C9C9;
+}
+
+
+/* Main */
+
+main {
+    padding-top: 243px;
+}
