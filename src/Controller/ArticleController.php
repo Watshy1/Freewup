@@ -62,7 +62,7 @@ class ArticleController extends Controller
 
         $numbersLikes = sizeof($articleLikes);
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST["act"] === "like") {
 
             if (empty($userLike)) {
                 $this->articleModel->addLike($_SESSION["user"]["id"], $article[0]["id"]);

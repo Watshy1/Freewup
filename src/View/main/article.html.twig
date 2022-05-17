@@ -30,9 +30,14 @@
         {% endif %}
         <div class="like_share">
             <form method="post" action="">
+                <input type="hidden" name="act" value="like">
                 <input type="submit" value="">
                 <p>{{ numberLikes }} likes</p>
             </form>
+            <div>
+                <i class="fa-solid fa-share-from-square"></i>
+                <p>118 partages</p>
+            </div>
         </div>
     </main>
 

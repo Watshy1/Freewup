@@ -102,22 +102,27 @@ main > img {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 35.3px;
     width: 80vw;
 }
 
-.like_share > form {
+.like_share > form, .like_share > div {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.like_share > form > input {
-    background: url("../../images/main/1196px-Facebook_like_thumb.png") no-repeat scroll 0 0 transparent;
+.like_share > div > i {
+    cursor: pointer;
+}
+
+.like_share > form:first-child > input {
+    background: url("../../images/main/Like-PNG-Images-HD.png") no-repeat scroll 0 0 transparent;
     background-size: contain;
     border: none;
     cursor: pointer;
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
 }
 
 
