@@ -9,8 +9,9 @@ body {
 header {
     display: flex;
     align-items: center;
-    gap: 409.5px;
+    justify-content: space-between;
     padding: 13px 0;
+    width: 80vw;
 }
 
 .header_left {
@@ -19,34 +20,12 @@ header {
     gap: 62.5px;
 }
 
-.header_left > nav > ul > li {
-    cursor: pointer;
-}
-
-.header_left > nav > ul > li > a {
-    text-decoration: none;
-    color: black;
-    font-family: "SF_pro_regular";
-    font-size: 19px;
-}
-
 .header_left > a > img {
     width: 194px;
 }
 
 .header_left > a {
     cursor: pointer;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 52px;
-}
-
-.header_separator {
-    height: 38.5px;
-    border: 2px solid black;
 }
 
 .header_right {
