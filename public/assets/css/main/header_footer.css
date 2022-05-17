@@ -192,8 +192,8 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 61px;
-    font-family: "SF_pro_light";
-    font-size: 22px;
+    font-family: "";
+    font-size: 20px;
 }
 
 .footer_top_link_block:first-child {
@@ -282,25 +282,25 @@ footer {
 
 @font-face {
     font-family: "SF_pro_heavy";
-    src: url(Font/FontsFree-Net-SFProText-Heavy-1.ttf);
+    src: url(../main/Font/FontsFree-Net-SFProText-Heavy-1.ttf);
 }
 
 @font-face {
     font-family: "SF_pro_regular";
-    src: url(Font/FontsFree-Net-SFProText-Regular-1.ttf);
+    src: url(../main/Font/FontsFree-Net-SFProText-Regular-1.ttf);
 }
 
 @font-face {
     font-family: "SF_pro_bold";
-    src: url(Font/FontsFree-Net-SFProText-Bold-1.ttf);
+    src: url(../main/Font/FontsFree-Net-SFProText-Bold-1.ttf);
 }
 
 @font-face {
     font-family: "SF_pro_light";
-    src: url(Font/FontsFree-Net-SFProText-Light-1.ttf);
+    src: url(../main/Font/FontsFree-Net-SFProText-Light-1.ttf);
 }
 
 @font-face {
     font-family: "SF_pro_semiBold";
-    src: url(Font/FontsFree-Net-SFProDisplay-Semibold.ttf);
+    src: url(../main/Font/FontsFree-Net-SFProDisplay-Semibold.ttf);
 }

@@ -28,6 +28,7 @@ class AdminController extends Controller
 
     public function deleteArticle($id)
     {
+        $this->adminModel->deleteLikeArticle($id);
         $this->adminModel->deleteArticle($id);
 
         header('Location: /admin');

@@ -130,20 +130,20 @@ main > img {
 
 @font-face {
     font-family: "SF_pro_bold";
-    src: url(Font/FontsFree-Net-SFProText-Bold-1.ttf);
+    src: url(../main/Font/FontsFree-Net-SFProText-Bold-1.ttf);
 }
 
 @font-face {
     font-family: "SF_pro_light";
-    src: url(Font/FontsFree-Net-SFProText-Light-1.ttf);
+    src: url(../main/Font/FontsFree-Net-SFProText-Light-1.ttf);
 }
 
 @font-face {
     font-family: "Lato_Heavy";
-    src: url(Font/Lato-Heavy.ttf);
+    src: url(../main/Font/Lato-Heavy.ttf);
 }
 
 @font-face {
     font-family: "Lato_Light";
-    src: url(Font/Lato-Light.ttf);
+    src: url(../main/Font/Lato-Light.ttf);
 }

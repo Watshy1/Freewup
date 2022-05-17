@@ -14,37 +14,43 @@
 {% block main %}
     <div class="background_image"></div>
 
-    <div class="content">
-        <img src="assets/images/ConnexionRegisterPage/logo-freewup-white.png" alt="logo Freew'up"></img>
+    <img src="assets/images/ConnexionRegisterPage/logo-freewup-white.png" alt="logo Freew'up"></img>
 
-        <div class="connexion_block">
-            <form action="" method="POST">
-                <div class="connexion_block_input">
-                    <input type="text" name="email" placeholder="Nom d'utilisateur / Email">
-                    <input type="password" name="password" placeholder="Mot de passe" id="input_password">
-                    <div class="hide_show_password"></div>
-                </div>
-                <a href="">Mot de passe oublié ?</a>
-                <div class="connexion_block_memory_me">
-                    <label class="container">
-                        <input type="checkbox">
-                        <span class="login_checkbox"></span>
-                    </label>
-                    <p>Se souvenir de moi</p>
-                </div>
-                <div class="connexion_block_separator"></div>
-                <p>OU</p>
-                <div class="connexion_block_buttons">
-                    <button disabled><i class="fa-brands fa-google fa-xl"></i>Se connecter avec Google </button>
-                    <button disabled><i class="fa-brands fa-apple fa-2xl"></i>Se connecter avec Apple </button>
-                </div>
-                <input type="submit" value="Connexion">
-            </form>
+    <main>
+        <div class="freewup_info">
+            <p>Freew’up c'est le site de networking le plus adapté dans l’aide et l’accompagnement au lancement de projet, parce qu’il permet la mise en relation en B2B et B2C et possède un véritable aspect communautaire avec des personnes du monde de la tech et du digital à l’écoute et toujours de bon conseil.</p>
+            <p>Freew’up s’associe également à des ONG, investi, et s'engage d'un point de vue <span class="freewup_info_color">éco-responsable.</span></p>
         </div>
+        <div class="content">
+            <div class="connexion_block">
+                <form action="" method="POST">
+                    <div class="connexion_block_input">
+                        <input type="text" name="email" placeholder="Nom d'utilisateur / Email">
+                        <input type="password" name="password" placeholder="Mot de passe" id="input_password">
+                        <div class="hide_show_password"></div>
+                    </div>
+                    <a href="">Mot de passe oublié ?</a>
+                    <div class="connexion_block_memory_me">
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="login_checkbox"></span>
+                        </label>
+                        <p>Se souvenir de moi</p>
+                    </div>
+                    <div class="connexion_block_separator"></div>
+                    <p>OU</p>
+                    <div class="connexion_block_buttons">
+                        <button disabled><i class="fa-brands fa-google fa-xl"></i>Se connecter avec Google </button>
+                        <button disabled><i class="fa-brands fa-apple fa-2xl"></i>Se connecter avec Apple </button>
+                    </div>
+                    <input type="submit" value="Connexion">
+                </form>
+            </div>
 
-        <div class="register_block">
-            <p>Vous n'avez pas de compte ?</p>
-            <a href="/register"><button>Inscription</button></a>
+            <div class="register_block">
+                <p>Vous n'avez pas de compte ?</p>
+                <a href="/register"><button>Inscription</button></a>
+            </div>
         </div>
-    </div>
+    </main>
 {% endblock %}

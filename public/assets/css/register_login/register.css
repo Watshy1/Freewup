@@ -169,6 +169,13 @@ button {
     font-family: 'Avenir_Light';
     font-size: 14px;
 }
+
+.register_block_right > p:last-child {
+    font-family: 'Avenir_Light';
+    font-size: 12px;
+    width: 250px;
+}
+
 .register_block_right > p:first-child {
     font-family: 'Avenir_Medium';
     font-size: 12px;
@@ -237,15 +244,15 @@ input[type=submit] {
 
 @font-face {
     font-family: "Avenir_Light";
-    src: url("../Metropolis/Metropolis-Light.otf");
+    src: url(../Metropolis/Metropolis-Light.otf);
 }
 
 @font-face {
     font-family: "Avenir_Medium";
-    src: url("../Metropolis/Metropolis-Medium.otf");
+    src: url(../Metropolis/Metropolis-Medium.otf);
 }
 
 @font-face {
     font-family: "Avenir_Heavy";
-    src: url("../Metropolis/Metropolis-SemiBold.otf");
+    src: url(../Metropolis/Metropolis-SemiBold.otf);
 }
