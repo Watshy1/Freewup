@@ -54,6 +54,11 @@ class ArticleController extends Controller
     {
         $article = $this->articleModel->showArticle($id);
 
+        if (empty($article)) {
+            header('Location: /');
+            exit();
+        }
+
         $userInfo = $this->articleModel->findUser($article[0]['userid']);
 
         $userLike = $this->articleModel->findUserLike($_SESSION["user"]["id"], $article[0]["id"]);
