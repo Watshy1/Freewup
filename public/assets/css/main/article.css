@@ -98,6 +98,28 @@ main > img {
     object-fit: contain;
 }
 
+.like_share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
+.like_share > form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.like_share > form > input {
+    background: url("../../images/main/1196px-Facebook_like_thumb.png") no-repeat scroll 0 0 transparent;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
 
 /* Font Family */
 

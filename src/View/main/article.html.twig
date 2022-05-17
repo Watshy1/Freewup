@@ -28,9 +28,10 @@
         {% if article.0.image %}
             <img src="/ImageArticle/{{ article.0.image }}">
         {% endif %}
-        <div>
+        <div class="like_share">
             <form method="post" action="">
-                <input type="submit">
+                <input type="submit" value="">
+                <p>{{ numberLikes }} likes</p>
             </form>
         </div>
     </main>

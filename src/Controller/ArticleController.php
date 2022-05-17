@@ -58,12 +58,18 @@ class ArticleController extends Controller
 
         $userLike = $this->articleModel->findUserLike($_SESSION["user"]["id"], $article[0]["id"]);
 
+        $articleLikes = $this->articleModel->ArticleLikes($article[0]["id"]);
+
+        $numbersLikes = sizeof($articleLikes);
+
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             if (empty($userLike)) {
                 $this->articleModel->addLike($_SESSION["user"]["id"], $article[0]["id"]);
+                $numbersLikes = $numbersLikes + 1;
             } else {
                 $this->articleModel->suppLike($_SESSION["user"]["id"], $article[0]["id"]);
+                $numbersLikes = $numbersLikes - 1;
             }   
             
         }
@@ -76,6 +82,7 @@ class ArticleController extends Controller
         echo $this->twig->render('main/article.html.twig', [
             'article' => $article,
             'userInfo' => $userInfo,
+            'numberLikes' => $numbersLikes,
         ]);
 
     }

@@ -108,4 +108,13 @@ class ArticleModel extends Model
         ]);
     }
 
+    public function ArticleLikes($article_id)
+    {
+        $statement = $this->pdo->prepare('SELECT * FROM `user_as_likes` WHERE `article_id` = :article_id');
+        $statement->execute([
+            'article_id' => $article_id,
+        ]);
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 }
