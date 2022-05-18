@@ -17,6 +17,8 @@ class ArticleController extends Controller
 
     public function show4lastArticles()
     {
+        // printf("%s\r\n", uniqid());
+
         $EconomieArticles = $this->articleModel->show4lastEconomieArticles();
         $TransportArticles = $this->articleModel->show4lastTransportArticles();
         $PolitiqueArticles = $this->articleModel->show4lastPolitiqueArticles();

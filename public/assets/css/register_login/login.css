@@ -47,8 +47,14 @@ main {
     gap: 50px;
     color: white;
     font-size: 25px;
-    font-family: "SF_pro_bold";
-    width: 443px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    line-height: 40px;
+    width: 417px;
+}
+
+.freewup_info_color {
+    color: #B3DBA4;
 }
 
 img {
@@ -78,7 +84,8 @@ input[type=text], input[type=password] {
     border: none;
     background-color: rgba(255, 255, 255, 1);
     padding: 0 10px;
-    font-family: 'Avenir_Light';
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     font-size: 16px;
 }
 
@@ -107,7 +114,8 @@ form {
 }
 
 .connexion_block a {
-    font-family: 'Avenir_Light';
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     font-size: 12px;
     color: white;
     margin: 13px 0 0 0;
@@ -115,13 +123,15 @@ form {
 
 .connexion_block p {
     margin: 0 0 9px 0;
-    font-family: 'Avenir_Medium';
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 12px;
     color: white;
 }
 
 .connexion_block_memory_me > p {
-    font-family: 'Avenir_Light';
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     font-size: 15px;
     margin: 15px 0 15px 13px;
 }
@@ -200,7 +210,8 @@ button {
     border-radius: 10px;
     border: none;
     color: white;
-    font-family: 'Avenir_Medium';
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 16px;
 }
 
@@ -224,8 +235,9 @@ input[type=submit] {
     background-color: white;
     border: none;
     border-radius: 10px;
-    font-family: "Avenir_Heavy";
-    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
     margin-top: 21px;
     cursor: pointer;
 }
@@ -246,7 +258,8 @@ input[type=submit] {
 
 .register_block p{
     margin: 0;
-    font-family: 'Avenir_Light';
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     font-size: 18px;
     color: white;
 }
@@ -257,29 +270,12 @@ input[type=submit] {
     color: white;
     border: none;
     border-radius: 10px;
-    font-family: 'Avenir_Heavy';
-    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 
 /* Font Family */
 
-@font-face {
-    font-family: "Avenir_Light";
-    src: url(../Metropolis/Metropolis-Light.otf);
-}
-
-@font-face {
-    font-family: "Avenir_Medium";
-    src: url(../Metropolis/Metropolis-Medium.otf);
-}
-
-@font-face {
-    font-family: "Avenir_Heavy";
-    src: url(../Metropolis/Metropolis-SemiBold.otf);
-}
-
-@font-face {
-    font-family: "SF_pro_bold";
-    src: url(../main/Font/FontsFree-Net-SFProText-Bold-1.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
