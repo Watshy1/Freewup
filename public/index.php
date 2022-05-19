@@ -48,6 +48,10 @@ $router->before('GET|POST', '/admin', function() {
 
 $router->get('/', 'Mvc\Controller\ArticleController@show4lastArticles');
 
+$router->get('/economyArticle', 'Mvc\Controller\ArticleController@showEconomyArticle');
+$router->get('/transportArticle', 'Mvc\Controller\ArticleController@showTransportArticle');
+$router->get('/politicArticle', 'Mvc\Controller\ArticleController@showPoliticArticle');
+
 $router->get('/register', 'Mvc\Controller\UserController@register');
 $router->post('/register', 'Mvc\Controller\UserController@register');
 

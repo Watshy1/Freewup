@@ -32,6 +32,27 @@ class ArticleModel extends Model
     }
 
 
+    // Economy, Transport and Politic Page
+
+    public function showEconomyArticle() {
+        $statement = $this->pdo->prepare('SELECT * FROM `article` WHERE `category` = "economie" LIMIT 15');
+        $statement->execute();
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function showTransportArticle() {
+        $statement = $this->pdo->prepare('SELECT * FROM `article` WHERE `category` = "transport" LIMIT 15');
+        $statement->execute();
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function showPolitiqueArticle() {
+        $statement = $this->pdo->prepare('SELECT * FROM `article` WHERE `category` = "politique" LIMIT 15');
+        $statement->execute();
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+
     // Create Article Page
 
     public function createArticle(string $title, string $subtitle, string $description, string $content, string $category, string $banner, int $userid, string $image)

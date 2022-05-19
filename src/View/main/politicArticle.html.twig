@@ -1,0 +1,45 @@
+{% extends 'main/base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="/assets/css/main/politicArticle.css">
+{% endblock %}
+
+{% block main %}
+
+    <div class="heading">
+        <p>BIENVENUE SUR</p>
+        <img src="/assets/images/main/logo-freewup-white.png" alt="logo_freewup">
+        <div>
+            <p>Catégories recommandées :</p>
+            <div class="heading_categories">
+                <button>Sport</button>
+                <button>Économie</button>
+                <button>Musique</button>
+                <button>Cuisine</button>
+                <button>Éducation</button>
+                <button>Médecine</button>
+                <button>Politique</button>
+                <button>Business</button>
+                <button>Webdesign</button>
+            </div>
+        </div>
+    </div>
+    <main>
+    <h2>Suite des articles</h2>
+    <div class="politic_block">
+        <h1>Politique</h1>
+        <div class="politic_block_list">
+            {% for politic in politics %}
+                <div class="politic_block_article" onclick="location.href='/article/{{ politic.id }}'">
+                    <p>{{ politic.title }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <button class="more_article">
+        <p class="more_article_text">Voir plus d'articles</p>
+        <i id="more_article_arrow" class="fa-solid fa-2xl fa-chevron-down"></i>
+    </button>
+    </main>
+
+{% endblock %}

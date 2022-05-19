@@ -30,6 +30,33 @@ class ArticleController extends Controller
         ]);
     }
 
+    public function showEconomyArticle()
+    {
+        $EconomieArticles = $this->articleModel->showEconomyArticle();
+
+        echo $this->twig->render('main/economyArticle.html.twig', [
+            'economies' => $EconomieArticles
+        ]);
+    }
+
+    public function showTransportArticle()
+    {
+        $TransportArticles = $this->articleModel->showTransportArticle();
+
+        echo $this->twig->render('main/transportArticle.html.twig', [
+            'transports' => $TransportArticles
+        ]);
+    }
+
+    public function showPoliticArticle()
+    {
+        $PolitiqueArticles = $this->articleModel->showPolitiqueArticle();
+
+        echo $this->twig->render('main/politicArticle.html.twig', [
+            'politics' => $PolitiqueArticles
+        ]);
+    }
+
     public function createArticle()
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {

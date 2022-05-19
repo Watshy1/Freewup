@@ -57,6 +57,21 @@
     cursor: pointer;
 }
 
+.more_article {
+    width: 526px;
+    height: 94px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.more_article > p {
+    font-size: 28px;
+    font-family: "Avenir_Heavy";
+}
+
+
 /* Main */
 
 main {
@@ -67,89 +82,18 @@ main {
     padding: 88px 0;
 }
 
-main h1 {
-    color: white;
-    font-size: 50px;
-    font-family: "Avenir_Heavy";
-    width: 1600px;
-}
-
 main > h2 {
     font-family: "Avenir_Heavy";
     font-size: 50px;
 }
 
-.category_economy_block > div, .category_transport_block > div, .category_politics_block > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 153px;
-    border-radius: 30px;
-    background-color: white;
-    font-size: 28px;
-    font-family: "Avenir_Heavy";
-    line-height: 35px;
-    cursor: pointer;
-}
-
-.category_economy_block > div > p, .category_transport_block > div > p, .category_politics_block > div > p {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-}
-
-.category_economy_block > div:last-child, .category_transport_block > div:last-child, .category_politics_block > div:last-child {
-    background-color: #8CA285;
-}
-
-.category_economy_block > div:last-child > p, .category_transport_block > div:last-child > p, .category_politics_block > div:last-child > p {
-    color: white;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-}
-
-.category_economy_block, .category_transport_block, .category_politics_block {
-    display: flex;
-    gap: 27px;
-}
-
-.category_economy {
+.politic_block {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 35px;
-    height: 447px;
-    width: 100vw;
-    background-image: url("../../images/main/vlad-busuioc-xyPxcqh8Tt8-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.category_transport {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 35px;
-    height: 447px;
-    width: 100vw;
-    background-image: url("../../images/main/kit-suman--vxhOD5_Aeo-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.category_politics {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 35px;
-    height: 447px;
+    padding-top: 30px;
+    height: 661px;
     width: 100vw;
     background-image: url("../../images/main/joakim-honkasalo-DurC25GdOvk-unsplash.jpg");
     background-repeat: no-repeat;
@@ -157,21 +101,38 @@ main > h2 {
     background-position: center;
 }
 
-main > button {
-    width: 526px;
-    height: 94px;
-    cursor: pointer;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-main > button > p {
-    font-size: 28px;
+.politic_block > h1 {
+    color: white;
+    font-size: 50px;
     font-family: "Avenir_Heavy";
+    width: 1600px;
 }
 
-/* Animation */
+.politic_block_list {
+    width: 89%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.politic_block_article {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 296px;
+    height: 153px;
+    border-radius: 20px;
+}
+
+.politic_block_article > p {
+    font-family: "Avenir_Medium";
+    font-size: 20px;
+}
+
+
+/* Animations */
 
 .more_article_text {
     font-family: 'Lato', sans-serif;
@@ -252,7 +213,6 @@ main > button > p {
         top: 0;
     }
 }
-
 
 /* Font family */
 
