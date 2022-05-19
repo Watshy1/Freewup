@@ -175,6 +175,7 @@ footer {
 
 .footer_top_media > div > img {
     height: 54px;
+    cursor: pointer;
 }
 
 .footer_top_media_social {
@@ -222,11 +223,13 @@ footer {
 }
 
 .footer_top_info > div > p {
-    font-family: "SF_pro_light";
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 .footer_top_info > p {
-    font-family: "SF_pro_semiBold";
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
 }
 
 .footer_top_info > div {
@@ -240,7 +243,7 @@ footer {
 }
 
 .footer_top_info_langue {
-    width: 380px;
+    width: 385px;
     height: 40px;
     border: 1px solid white;
     border-radius: 13px;
@@ -251,8 +254,7 @@ footer {
 }
 
 .footer_top_info_langue > p {
-    font-family: "SF_pro_light";
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .footer_top_info_langue > select {
@@ -260,7 +262,6 @@ footer {
     color: white;
     background: transparent;
     border: 0;
-    font-family: "SF_pro_medium";
     font-size: 22px;
 }
 
@@ -270,12 +271,14 @@ footer {
 }
 
 .footer_bottom {
-
+    height: 45px;
     background-color: #013B0C;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     font-size: 15px;
 }
 
