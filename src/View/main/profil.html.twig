@@ -11,7 +11,9 @@
             <div class="container_profil_info">
                 <div class="container_profil_info_image"></div>
                 <div class="container_profil_info_perso">
-                    <h1>Nom_prénom</h1>
+                    <h1> {# need CSS in TWIG to display the profil correctly #}
+                        {{ profil.lastname }} {{ profil.firstname }}
+                    </h1>
                     <div>
                         <div>
                             <h2>10</h2>

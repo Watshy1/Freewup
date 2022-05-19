@@ -23,12 +23,12 @@ main {
 
 .user_info > p:first-child {
     cursor: pointer;
-    font-family: "SF_pro_bold";
-    font-size: 23px;
+    font-family: "Avenir_Black";
+    font-size: 26px;
 }
 
 .user_info > p:last-child {
-    font-family: "SF_pro_light";
+    font-family: 'Lato', sans-serif;
     font-size: 20px;
 }
 
@@ -65,9 +65,10 @@ main {
 
 .article_title > h1 {
     width: 73%;
-    font-size: 100px;
     text-align: center;
     color: white;
+    font-family: "Avenir_Black";
+    font-size: 115px;
 }
 
 .article_pre_content {
@@ -77,18 +78,20 @@ main {
 }
 
 .article_pre_content > h2 {
-    font-family: "Lato_Heavy";
+    font-family: "Avenir_Heavy";
     font-size: 40px;
 }
 
 .article_pre_content > p {
-    font-family: "Lato_Light";
-    font-size: 33px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
     line-height: 36px;
 }
 
 .article_content > p {
-    font-family: "Lato_Light";
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     font-size: 30px;
     line-height: 36px;
     white-space: pre-wrap;
@@ -130,22 +133,14 @@ main > img {
 
 /* Font Family */
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 @font-face {
-    font-family: "SF_pro_bold";
-    src: url(../main/Font/FontsFree-Net-SFProText-Bold-1.ttf);
+    font-family: "Avenir_Black";
+    src: url(../main/Font/Avenir-Black.ttf);
 }
 
 @font-face {
-    font-family: "SF_pro_light";
-    src: url(../main/Font/FontsFree-Net-SFProText-Light-1.ttf);
-}
-
-@font-face {
-    font-family: "Lato_Heavy";
-    src: url(../main/Font/Lato-Heavy.ttf);
-}
-
-@font-face {
-    font-family: "Lato_Light";
-    src: url(../main/Font/Lato-Light.ttf);
+    font-family: "Avenir_Heavy";
+    src: url(../main/Font/Avenir-Heavy.ttf);
 }

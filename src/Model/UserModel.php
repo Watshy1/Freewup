@@ -40,9 +40,15 @@ class UserModel extends Model
         return $statement->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function profil()
+    public function profil(int $id)
     {
-        
+        $statement = $this->pdo->prepare('SELECT * FROM `user` WHERE `id` = :id');
+        $statement->execute([
+            'id' => $id
+        ]);
+
+        return $statement->fetch(PDO::FETCH_ASSOC);
+
     }
 
 }

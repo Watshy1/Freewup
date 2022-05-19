@@ -59,7 +59,11 @@ class UserController extends Controller
 
     public function profil($id)
     {
-        echo $this->twig->render('main/profil.html.twig');
+        $profil = $this->userModel->profil($id);
+
+        echo $this->twig->render('main/profil.html.twig', [
+            'profil' => $profil
+        ]);
     }
 
     #[NoReturn] public function logout() {
