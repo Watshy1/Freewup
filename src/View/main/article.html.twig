@@ -5,12 +5,11 @@
 {% endblock %}
 
 {% block main %}
-
     <main>
         <div class="user">
-            <div class="user_image"></div>
+            <div class="user_image" onclick="location.href='/profil/{{ article.0.userid }}'"></div>
             <div class="user_info">
-                <p>{{ userInfo.0.firstname }} {{ userInfo.0.lastname }}</p>
+                <p onclick="location.href='/profil/{{ article.0.userid }}'">{{ userInfo.0.firstname }} {{ userInfo.0.lastname }}</p>
                 <div class="user_info_separator"></div>
                 <p>Posté le {{ article.0.create_at }}</p>
             </div>

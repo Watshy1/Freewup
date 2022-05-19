@@ -22,6 +22,7 @@ main {
 }
 
 .user_info > p:first-child {
+    cursor: pointer;
     font-family: "SF_pro_bold";
     font-size: 23px;
 }
@@ -32,6 +33,7 @@ main {
 }
 
 .user_image {
+    cursor: pointer;
     width: 110px;
     height: 110px;
     border-radius: 50%;
