@@ -14,6 +14,11 @@
     color: white;
 }
 
+.heading > p {
+    font-family: "Avenir_Medium";
+    font-size: 20px;
+}
+
 .heading > img {
     height: 115px;
 }
@@ -34,7 +39,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    width: 780px;
+    width: 790px;
     flex-wrap: wrap;
 }
 
@@ -47,8 +52,8 @@
     padding: 8px 28px;
     background-color: #8CA285;
     color: white;
-    font-family: "Avenir_Medium";
-    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
     cursor: pointer;
 }
 
@@ -64,9 +69,14 @@ main {
 
 main h1 {
     color: white;
-    font-size: 80px;
+    font-size: 50px;
     font-family: "Avenir_Heavy";
-    width: 1290px;
+    width: 1600px;
+}
+
+main > h2 {
+    font-family: "Avenir_Heavy";
+    font-size: 50px;
 }
 
 .category_economy_block > div, .category_transport_block > div, .category_politics_block > div {
@@ -85,6 +95,19 @@ main h1 {
 
 .category_economy_block > div > p, .category_transport_block > div > p, .category_politics_block > div > p {
     text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.category_economy_block > div:last-child, .category_transport_block > div:last-child, .category_politics_block > div:last-child {
+    background-color: #8CA285;
+}
+
+.category_economy_block > div:last-child > p, .category_transport_block > div:last-child > p, .category_politics_block > div:last-child > p {
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
 }
 
 .category_economy_block, .category_transport_block, .category_politics_block {
@@ -104,6 +127,7 @@ main h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    backdrop-filter: opacity(20%);
 }
 
 .category_transport {
@@ -149,6 +173,12 @@ main > button > p {
 }
 
 /* Animation */
+
+.more_article_text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
 
 .more_article:hover {
     background-color: black;
@@ -196,13 +226,13 @@ main > button > p {
     from {
         top: 0;
     } to {
-        top: 40px;
+        top: 50px;
     }
 }
 
 @keyframes ArrowAnimationReverse {
     from {
-        top: 40px;
+        top: 50px;
     } to {
         top: 0;
     }
@@ -212,13 +242,13 @@ main > button > p {
     from {
         top: 0;
     } to {
-        top: 20px;
+        top: 10px;
     }
 }
 
 @keyframes TextAnimationReverse {
     from {
-        top: 20px;
+        top: 10px;
     } to {
         top: 0;
     }
@@ -227,12 +257,19 @@ main > button > p {
 
 /* Font family */
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@font-face {
+    font-family: "Avenir_Light";
+    src: url(../main/Font/Avenir-Light.ttf);
+}
+
 @font-face {
     font-family: "Avenir_Medium";
-    src: url(../main/Font/Avenir\ Medium.ttf);
+    src: url(../main/Font/Avenir-Medium.ttf);
 }
 
 @font-face {
     font-family: "Avenir_Heavy";
-    src: url(../main/Font/Avenir\ Heavy.ttf);
+    src: url(../main/Font/Avenir-Heavy.ttf);
 }

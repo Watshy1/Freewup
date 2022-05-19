@@ -32,7 +32,7 @@ header {
     text-decoration: none;
     color: black;
     font-size: 20px;
-    font-family: "Avenir_medium";
+    font-family: "Avenir_Light";
 }
 
 .header_right {
@@ -44,8 +44,8 @@ header {
 .header_right > input {
     height: 31px;
     width: 252px;
-    font-family: "SF_pro_light";
-    font-size: 20px;
+    font-family: "Avenir_Light";
+    font-size: 25px;
     border: none;
     border-bottom: 1px solid black;
 }
@@ -53,7 +53,7 @@ header {
 .header_right > i {
     position: absolute;
     left: 230px;
-    top: 10px;
+    top: 15px;
 }
 
 .header_right_actions {
@@ -192,12 +192,14 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 61px;
-    font-family: "";
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     font-size: 20px;
 }
 
 .footer_top_link_block:first-child {
-    font-family: "SF_pro_semiBold";
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 .footer_top_link_block > a {
@@ -268,39 +270,20 @@ footer {
 }
 
 .footer_bottom {
-    height: 45px;
+
     background-color: #013B0C;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    font-family: "SF_pro_bold";
 }
 
 /* Font Family */
 
-@font-face {
-    font-family: "SF_pro_heavy";
-    src: url(../main/Font/FontsFree-Net-SFProText-Heavy-1.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 @font-face {
-    font-family: "SF_pro_regular";
-    src: url(../main/Font/FontsFree-Net-SFProText-Regular-1.ttf);
-}
-
-@font-face {
-    font-family: "SF_pro_bold";
-    src: url(../main/Font/FontsFree-Net-SFProText-Bold-1.ttf);
-}
-
-@font-face {
-    font-family: "SF_pro_light";
-    src: url(../main/Font/FontsFree-Net-SFProText-Light-1.ttf);
-}
-
-@font-face {
-    font-family: "SF_pro_semiBold";
-    src: url(../main/Font/FontsFree-Net-SFProDisplay-Semibold.ttf);
+    font-family: "Avenir_Light";
+    src: url(../main/Font/Avenir-Light.ttf);
 }
