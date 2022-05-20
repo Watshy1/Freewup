@@ -51,4 +51,14 @@ class UserModel extends Model
 
     }
 
+    public function number_articles($userid)
+    {
+        $statement = $this->pdo->prepare('SELECT * FROM `article` WHERE `userid` = :userid');
+        $statement->execute([
+            'userid' => $userid
+        ]);
+
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 }

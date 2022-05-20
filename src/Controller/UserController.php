@@ -60,9 +60,16 @@ class UserController extends Controller
     public function profil($id)
     {
         $profil = $this->userModel->profil($id);
+        $articles = $this->userModel->number_articles($id);
+        $number_articles = 0;
+        foreach ($articles as $value) {
+            $number_articles = $number_articles + 1;
+        }
 
         echo $this->twig->render('main/profil.html.twig', [
-            'profil' => $profil
+            'profil' => $profil,
+            'number_articles' => $number_articles,
+            'articles' => $articles
         ]);
     }
 

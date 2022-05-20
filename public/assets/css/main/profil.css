@@ -67,5 +67,70 @@
 /* Main */
 
 main {
+    width: 80%;
     padding-top: 243px;
+}
+
+main > .article_filter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+main > .article_filter > i {
+    cursor: pointer;
+}
+
+.list_articles {
+    display: flex;
+    gap: 45px;
+}
+
+.block_article {
+    height: 485px;
+    width: 485px;
+    border-radius: 20px;
+    background-color: #EDEDED;
+}
+
+.block_article_title_background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 157px;
+}
+
+.block_article_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 4px 6px;
+    border-radius: 10px;
+}
+
+.block_article_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.block_article_info_separator {
+    width: 321px;
+    border: 1px solid black;
+}
+
+.block_article_info_views {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 206px;
+}
+
+.fa-2xs {
+    line-height: 1;
 }

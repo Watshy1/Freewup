@@ -12,8 +12,8 @@
                 <div class="container_profil_info">
                     <div class="container_profil_info_image"></div>
                     <div class="container_profil_info_perso">
-                        <h1> {# need CSS in TWIG to display the profil correctly #}
-                            {% if (profil.lastname == "" and profil.lastname == "") %}
+                        <h1>
+                            {% if (profil.lastname == "" and profil.firstname == "") %}
                                 <style>
                                     .container_profil_info_perso > div {
                                         padding-top: 50px;
@@ -24,7 +24,7 @@
                         </h1>
                         <div>
                             <div>
-                                <h2>10</h2>
+                                <h2>{{ number_articles }}</h2>
                                 <p>Articles</p>
                             </div>
                             <div>
@@ -42,7 +42,33 @@
         </div>
 
         <main>
-
+            <div class="article_filter">
+                <p>Du plus récent au plus ancien</p><i class="fa-solid fa-arrow-down-wide-short"></i>
+            </div>
+            <div class="list_articles">
+                <div class="block_article">
+                    <div class="block_article_title_background">
+                        <div class="block_article_title">
+                            {{ articles.0.category }}
+                        </div>
+                    </div>
+                    <div class="block_article_info">
+                        <h2>{{ articles.0.title }}</h2>
+                        <p>Créer le {{ articles.0.create_at }}</p>
+                        <div class="block_article_info_separator"></div>
+                        <div class="block_article_info_views">
+                            <i class="fa-regular fa-eye"></i>
+                            <p>1230 vues</p>
+                            <i class="fa-solid fa-2xs fa-circle"></i>
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <p>213 likes</p>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <p>123 partages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ dump(articles) }}
         </main>
 
     {% endapply %}
