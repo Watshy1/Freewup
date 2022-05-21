@@ -20,6 +20,48 @@ $router->before('GET|POST', '/article/(\d+)', function() {
     }
 });
 
+$router->before('GET|POST', '/profil/(\d+)', function() {
+    if (!isset($_SESSION['user'])) {
+        header('location: /login');
+        exit;
+    }
+});
+
+$router->before('GET|POST', '/economyArticle', function() {
+    if (!isset($_SESSION['user'])) {
+        header('location: /login');
+        exit;
+    }
+});
+
+$router->before('GET|POST', '/transportArticle', function() {
+    if (!isset($_SESSION['user'])) {
+        header('location: /login');
+        exit;
+    }
+});
+
+$router->before('GET|POST', '/politicArticle', function() {
+    if (!isset($_SESSION['user'])) {
+        header('location: /login');
+        exit;
+    }
+});
+
+$router->before('GET|POST', '/createArticle', function() {
+    if (!isset($_SESSION['user'])) {
+        header('location: /login');
+        exit;
+    }
+});
+
+$router->before('GET', '/deleteArticle/(\d+)', function() {
+    if (!isset($_SESSION['user'])) {
+        header('location: /login');
+        exit;
+    }
+});
+
 $router->before('GET|POST', '/login', function() {
     if (isset($_SESSION['user'])) {
         header('location: /');
@@ -40,7 +82,7 @@ $router->before('GET|POST', '/article/', function() {
 });
 
 $router->before('GET|POST', '/admin', function() {
-    if ($_SESSION['user']["role"] !== "admin") {
+    if (!isset($_SESSION['user']) || $_SESSION['user']["role"] !== "admin") {
         header('location: /');
         exit;
     }
