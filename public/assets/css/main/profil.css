@@ -96,6 +96,7 @@ main > .article_filter > i {
 }
 
 .block_article {
+    cursor: pointer;
     height: 445px;
     width: 445px;
     border-radius: 20px;

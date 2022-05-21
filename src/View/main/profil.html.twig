@@ -48,7 +48,7 @@
             <div class="list_articles">
                 {% set iteration = 0 %}
                 {% for article in articles %}
-                    <div class="block_article">
+                    <div class="block_article" onclick="location.href='/article/{{ article.id }}'">
                         {% if article.image is empty or article.image == "" %}
                             {% if article.category == "economie" %}
                                 <style>
