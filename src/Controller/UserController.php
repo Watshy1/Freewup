@@ -61,15 +61,20 @@ class UserController extends Controller
     {
         $profil = $this->userModel->profil($id);
         $articles = $this->userModel->number_articles($id);
+        $number_articles_likes = [];
+
         $number_articles = 0;
+
         foreach ($articles as $value) {
             $number_articles = $number_articles + 1;
+            $number_articles_likes[] = count($this->userModel->number_articles_likes($value['id']));
         }
 
         echo $this->twig->render('main/profil.html.twig', [
             'profil' => $profil,
             'number_articles' => $number_articles,
-            'articles' => $articles
+            'articles' => $articles,
+            'number_articles_likes' => $number_articles_likes
         ]);
     }
 

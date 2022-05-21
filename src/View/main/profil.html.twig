@@ -46,29 +46,72 @@
                 <p>Du plus récent au plus ancien</p><i class="fa-solid fa-arrow-down-wide-short"></i>
             </div>
             <div class="list_articles">
-                <div class="block_article">
-                    <div class="block_article_title_background">
-                        <div class="block_article_title">
-                            {{ articles.0.category }}
+                {% set iteration = 0 %}
+                {% for article in articles %}
+                    <div class="block_article">
+                        {% if article.image is empty or article.image == "" %}
+                            {% if article.category == "economie" %}
+                                <style>
+                                    #article_background_{{ iteration }} {
+                                        background-image: url(../../../assets/images/main/vlad-busuioc-xyPxcqh8Tt8-unsplash.jpg);
+                                        background-position: center;
+                                        background-size: cover;
+                                    }
+                                </style>
+                            {% elseif article.category == "politique" %}
+                                <style>
+                                    #article_background_{{ iteration }} {
+                                        background-image: url(../../../assets/images/main/joakim-honkasalo-DurC25GdOvk-unsplash.jpg);
+                                        background-position: center;
+                                        background-size: cover;
+                                    }
+                                </style>
+                            {% elseif article.category == "transport" %}
+                                <style>
+                                    #article_background_{{ iteration }} {
+                                        background-image: url(../../../assets/images/main/kit-suman--vxhOD5_Aeo-unsplash.jpg);
+                                        background-position: center;
+                                        background-size: cover;
+                                    }
+                                </style>
+                            {% endif %}
+                        {% else %}
+                            <style>
+                                #article_background_{{ iteration }} {
+                                    background-image: url(../../../ImageArticle/{{ article.image }});
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+                            </style>
+                        {% endif %}
+                        <div class="block_article_title_background" id="article_background_{{ iteration }}">
+                            <div class="block_article_title">
+                                {{ article.category }}
+                            </div>
+                        </div>
+                        <div class="block_article_info">
+                            <h2>{{ article.title }}</h2>
+                            <p>Créer le {{ article.create_at }}</p>
+                            <div class="block_article_info_separator"></div>
+                            <div class="block_article_info_views">
+                                <i class="fa-regular fa-eye"></i>
+                                <p>1230 vues</p>
+                                <i class="fa-solid fa-2xs fa-circle"></i>
+                                <i class="fa-regular fa-thumbs-up"></i>
+                                <p>{{ number_articles_likes[iteration] }} likes</p>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <p>123 partages</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="block_article_info">
-                        <h2>{{ articles.0.title }}</h2>
-                        <p>Créer le {{ articles.0.create_at }}</p>
-                        <div class="block_article_info_separator"></div>
-                        <div class="block_article_info_views">
-                            <i class="fa-regular fa-eye"></i>
-                            <p>1230 vues</p>
-                            <i class="fa-solid fa-2xs fa-circle"></i>
-                            <i class="fa-regular fa-thumbs-up"></i>
-                            <p>213 likes</p>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            <p>123 partages</p>
-                        </div>
-                    </div>
-                </div>
+                    {% set iteration = iteration + 1 %}
+                {% endfor %}
             </div>
-            {{ dump(articles) }}
+            {% if number_articles == 0 and session.user.id == profil.id %}
+                <div class="first_article">
+                    <h2><a href="/createArticle">Crée ton première article</a></h2>
+                </div>
+            {% endif %}
         </main>
 
     {% endapply %}

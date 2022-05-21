@@ -61,4 +61,14 @@ class UserModel extends Model
         return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function number_articles_likes($article_id)
+    {
+        $statement = $this->pdo->prepare('SELECT * FROM `article` INNER JOIN `user_as_likes` ON `article`.`id` = `user_as_likes`.`article_id` WHERE `article_id` = :article_id');
+        $statement->execute([
+            'article_id' => $article_id
+        ]);
+
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 }
