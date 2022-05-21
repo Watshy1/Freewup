@@ -1,12 +1,36 @@
+.heading {
+    width: 100vw;
+    height: 381px;
+    background-image: url(../../images/main/pexels-ono-kosuki-6000154.jpg);
+    background-position: center -280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading > h1 {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    color: white;
+    font-size: 90px;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+main {
+    padding: 56px 0;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
 }
 
 form > textarea {
-    min-width: 982px;
-    max-width: 982px;
+    min-width: 80vw;
+    max-width: 80vw;
 }
 
 form > textarea[name="content"] {
@@ -15,4 +39,38 @@ form > textarea[name="content"] {
 
 form > textarea[name="description"] {
     min-height: 154px;
+}
+
+input {
+    padding: 10px 5px 10px;
+    width: 80vw;
+    border-radius: 3px;
+}
+
+input[type="file"] {
+    padding: 0;
+}
+
+textarea {
+    padding: 10px 0 0 5px;
+}
+
+input[type="submit"] {
+    width: 356px;
+    padding: 16px 0;
+    background-color: white;
+    border: 1px solid #8CA285;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family: "Avenir_Black";
+    color: #8CA285;
+    cursor: pointer;
+}
+
+
+/* Font Family */
+
+@font-face {
+    font-family: "Avenir_Black";
+    src: url(../main/Font/Avenir-Black.ttf);
 }

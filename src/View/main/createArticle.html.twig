@@ -5,21 +5,25 @@
 {% endblock %}
 
 {% block main %}
+    <div class="heading">
+        <h1>Nouveau Post</h1>
+    </div>
+    <main>
 
-    <form method="post" action="" id="createArticle" enctype="multipart/form-data">
-        <input type="text" name="title" placeholder="Titre">
-        <input type="text" name="subtitle" placeholder="Sous-titre">
-        <input list="category" name="category" placeholder="Catégories">
-        <datalist id="category">
-            <option value="Politique">
-            <option value="Transport">
-            <option value="Economie">
-        </datalist>
-        <input type="text" name="banner" placeholder="Bannière">
-        <textarea name="description" rows="10" cols="120" form="createArticle" placeholder="Description"></textarea>
-        <textarea name="content" rows="20" cols="120" form="createArticle" placeholder="Contenu"></textarea>
-        <input type="file" name="uploadedFile">
-        <input type="submit" value="Publier">
-    </form>
-
+        <form method="post" action="" id="createArticle" enctype="multipart/form-data">
+            <input type="text" name="title" placeholder="Titre de l'article :">
+            <input type="text" name="subtitle" placeholder="Sous-titre :">
+            <input list="category" name="category" placeholder="Catégorie :">
+            <datalist id="category">
+                <option value="Politique">
+                <option value="Transport">
+                <option value="Economie">
+            </datalist>
+            <input type="text" name="banner" placeholder="Ajouter une bannière">
+            <textarea name="description" rows="10" cols="120" form="createArticle" placeholder="Courte description :"></textarea>
+            <textarea name="content" rows="20" cols="120" form="createArticle" placeholder="Contenu :"></textarea>
+            <input type="file" name="uploadedFile">
+            <input type="submit" value="Publier">
+        </form>
+    </main>
 {% endblock %}

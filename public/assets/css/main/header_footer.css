@@ -58,17 +58,15 @@ header {
 
 .header_right_actions {
     display: flex;
-    gap: 15px;
+    gap: 40px;
     align-items: center;
 }
 
+.header_right_actions > div > img {
+    width: 30px;
+}
+
 #add_post {
-    width: 34px;
-    height: 34px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
 }
 
@@ -231,9 +229,8 @@ footer {
     gap: 18.5px;
 }
 
-.footer_top_info > div > i {
-    color: black;
-    height: 21px;
+.footer_top_info > div > img {
+    width: 25px;
 }
 
 .footer_top_info_langue {
