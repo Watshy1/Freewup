@@ -3,7 +3,7 @@
 .container_profil {
     width: 100vw;
     height: 367px;
-    background-image: url(https://via.placeholder.com/1792x232);
+    background-image: url(../../images/main/image-fond-ville.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -14,9 +14,8 @@
     display: flex;
     align-items: center;
     gap: 28.8px;
-    position: absolute;
-    bottom: -141px;
-    left: 268px;
+    padding: 274px 0 0 268px;
+    backdrop-filter: blur(10px);
 }
 
 .container_profil_info_image {
@@ -36,20 +35,24 @@
 }
 
 .container_profil_info_perso > h1 {
+    font-family: 'Avenir_Black';
     font-size: 60px;
 }
 
 .container_profil_info_perso > div {
     display: flex;
     gap: 28px;
+    font-family: 'Lato', sans-serif;
 }
 
 .container_profil_info_perso > div > div > h2 {
     font-size: 40px;
+    font-weight: 400;
 }
 
 .container_profil_info_perso > div > div > p {
     font-size: 17px;
+    font-weight: 700;
 }
 
 .container_profil_info_perso > div > div {
@@ -85,6 +88,11 @@ main > .article_filter {
     gap: 15px;
 }
 
+main > .article_filter > p {
+    font-size: 22px;
+    font-family: "Avenir_Medium";
+}
+
 main > .article_filter > i {
     cursor: pointer;
 }
@@ -118,6 +126,8 @@ main > .article_filter > i {
     background-color: white;
     padding: 4px 6px;
     border-radius: 10px;
+    font-size: 30px;
+    font-family: "Avenir_Light";
 }
 
 .block_article_info {
@@ -125,6 +135,19 @@ main > .article_filter > i {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    padding-top: 38px;
+}
+
+.block_article_info > h2 {
+    font-size: 28px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.block_article_info > p {
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 .block_article_info_separator {
@@ -138,7 +161,10 @@ main > .article_filter > i {
     align-items: center;
     flex-wrap: wrap;
     gap: 5px;
-    width: 190px;
+    width: 240px;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 .fa-2xs {
@@ -159,4 +185,24 @@ main > .article_filter > i {
 .first_article > h2 > a {
     text-decoration: none;
     color: black;
+}
+
+
+/* Font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@font-face {
+    font-family: "Avenir_Black";
+    src: url(../main/Font/Avenir-Black.ttf);
+}
+
+@font-face {
+    font-family: "Avenir_Medium";
+    src: url(../main/Font/Avenir-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Avenir_Light";
+    src: url(../main/Font/Avenir-Light.ttf);
 }
