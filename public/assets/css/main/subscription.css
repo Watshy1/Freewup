@@ -21,17 +21,20 @@
 /* Main */
 
 main {
+    display: flex;
+    flex-direction: column;
     padding: 56px 0;
 }
 
-main > h2 {
+#title_sub {
     font-size: 40px;
     font-family: "Avenir_Heavy";
-    padding: 0 0 10px 0;
+    padding: 0 0 10px 70px;
 }
 
 .list_sub {
     display: flex;
+    justify-content: center;
     gap: 58px;
 }
 
@@ -125,6 +128,109 @@ main > h2 {
     padding: 26px 0 0 0;
 }
 
+#title_assoc {
+    font-size: 40px;
+    font-family: 'Avenir_Heavy';
+    padding: 88px 0 0 70px;
+}
+
+main > p {
+    padding: 2px 0 10px 70px;
+    font-size: 20px;
+    font-family: "Avenir_Heavy";
+}
+
+.list_assoc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 11px;
+    padding: 0 0 54px 0;
+}
+
+.block_assoc1, .block_assoc2, .block_assoc3, .block_assoc4, .block_assoc5, .block_assoc6, .block_assoc7, .block_assoc8 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 396px;
+    height: 237px;
+    border: 1px solid #8CA285;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.list_assoc > label > input {
+    display: none;
+}
+
+.list_assoc > label > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #8CA285;
+    border-radius: 50%;
+    margin: 10px 0 0 10px;
+    cursor: pointer;
+}
+
+#Assoc1:checked + #Assoc1_label, #Assoc2:checked + #Assoc2_label, #Assoc3:checked + #Assoc3_label, #Assoc4:checked + #Assoc4_label, #Assoc5:checked + #Assoc5_label, #Assoc6:checked + #Assoc6_label, #Assoc7:checked + #Assoc7_label, #Assoc8:checked + #Assoc8_label  {
+    background-color: #8CA285;
+}
+
+.block_assoc1:first-child > img {
+    width: 306px;
+    align-self: center;
+}
+
+.block_assoc2:nth-child(2) > img {
+    width: 257px;
+    align-self: center;
+}
+
+.block_assoc3:nth-child(3) > img {
+    width: 218px;
+    align-self: center;
+}
+
+.block_assoc4:nth-child(4) > img {
+    width: 206px;
+    align-self: center;
+}
+
+.block_assoc5:nth-child(5) > img {
+    width: 141px;
+    align-self: center;
+}
+
+.block_assoc6:nth-child(6) > img {
+    width: 225px;
+    align-self: center;
+}
+
+.block_assoc7:nth-child(7) > img {
+    width: 288px;
+    align-self: center;
+}
+
+.block_assoc8:nth-child(8) > img {
+    width: 197px;
+    align-self: center;
+}
+
+main > button {
+    color: #8CA285;
+    background-color: white;
+    border: 1px solid #8CA285;
+    border-radius: 20px;
+    width: 356px;
+    height: 83px;
+    align-self: center;
+    font-size: 40px;
+    font-family: "Avenir_Heavy";
+    cursor: pointer;
+}
 
 /* Font Family */
 

@@ -13,7 +13,7 @@
         <h1>Abonnements</h1>
     </div>
     <main>
-        <h2>Sélectionner votre abonnement :</h2>
+        <h2 id="title_sub">Sélectionner votre abonnement :</h2>
         <div class="list_sub">
             <label label="Sub1" class="Sub1_block">
                 <input type="radio" name="Sub" id="Sub1">
@@ -55,5 +55,50 @@
                 <p>30% des revenus de l’abonnement contribueront à une association de votre choix</p>
             </label>
         </div>
+        <h2 id="title_assoc">Sélectionner une ou plusieurs associations :</h2>
+        <p>Parmi les 30%, choisissez de reverser à une ou plusieurs associations présenté ci-dessous :</p>
+        <div class="list_assoc">
+            <label class="block_assoc1">
+                <input type="checkbox" name="Assoc1" id="Assoc1">
+                <label for="Assoc1" id="Assoc1_label"></label>
+                <img src="/assets/images/main/5a0c731b9642de34b6b65cee.png">
+            </label>
+            <label class="block_assoc2">
+                <input type="checkbox" name="Assoc2" id="Assoc2">
+                <label for="Assoc2" id="Assoc2_label"></label>
+                <img src="/assets/images/main/1200px-UNICEF_Logo.png">
+            </label>
+            <label class="block_assoc3">
+                <input type="checkbox" name="Assoc3" id="Assoc3">
+                <label for="Assoc3" id="Assoc3_label"></label>
+                <img src="/assets/images/main/Logo_Action_contre_la_faim.svg.png">
+            </label>
+            <label class="block_assoc4">
+                <input type="checkbox" name="Assoc4" id="Assoc4">
+                <label for="Assoc4" id="Assoc4_label"></label>
+                <img src="/assets/images/main/Secours_populaire_logo.svg.png">
+            </label>
+            <label class="block_assoc5">
+                <input type="checkbox" name="Assoc5" id="Assoc5">
+                <label for="Assoc5" id="Assoc5_label"></label>
+                <img src="/assets/images/main/1200px-Logo_Sidaction.svg.png">
+            </label>
+            <label class="block_assoc6">
+                <input type="checkbox" name="Assoc6" id="Assoc6">
+                <label for="Assoc6" id="Assoc6_label"></label>
+                <img src="/assets/images/main/logo_vertical_re_couleur.png">
+            </label>
+            <label class="block_assoc7">
+                <input type="checkbox" name="Assoc7" id="Assoc7">
+                <label for="Assoc7" id="Assoc7_label"></label>
+                <img src="/assets/images/main/Amnesty_International-Logo.wine.png">
+            </label>
+            <label class="block_assoc8">
+                <input type="checkbox" name="Assoc8" id="Assoc8">
+                <label for="Assoc8" id="Assoc8_label"></label>
+                <img src="/assets/images/main/Logo_Adie.png">
+            </label>
+        </div>
+        <button>Valider</button>
     </main>
 {% endblock %}
