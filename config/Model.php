@@ -10,7 +10,7 @@ class Model
 
     public function __construct()
     {
-        $this->pdo = new PDO('mysql:host=localhost;dbname=gajc9642_freewup;charset=UTF8', "", "", [
+        $this->pdo = new PDO('mysql:host=;dbname=gajc9642_freewup;charset=UTF8', "", "", [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::MYSQL_ATTR_FOUND_ROWS => true
             ]
