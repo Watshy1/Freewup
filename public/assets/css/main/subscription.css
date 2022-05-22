@@ -45,6 +45,7 @@ main > h2 {
     height: 40px;
     border: 3px solid #8CA285;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #Sub1:checked + #Sub1_label, #Sub2:checked + #Sub2_label, #Sub3:checked + #Sub3_label {
@@ -56,9 +57,10 @@ main > h2 {
     border: 1px solid #8CA285;
     border-radius: 20px;
     padding: 15px;
+    cursor: pointer;
 }
 
-.Sub1_block > h2 {
+.Sub1_block > h2, .Sub2_block > h2, .Sub3_block > h2 {
     display: flex;
     justify-content: center;
     padding: 31px 0 0 0;
@@ -67,20 +69,20 @@ main > h2 {
     color: #8CA285;
 }
 
-.Sub1_block > div {
+.Sub1_block > div, .Sub2_block > div, .Sub3_block > div {
     padding: 103px 0 0 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.Sub1_block > div > li {
+.Sub1_block > div > li, .Sub2_block > div > li, .Sub3_block > div > li {
     list-style-type: none;
     font-size: 20px;
     font-family: "Lato", sans-serif;
 }
 
-.Sub1_block > div > li::before {
+.Sub1_block > div > li::before, .Sub2_block > div > li::before, .Sub3_block > div > li::before {
     content: "\2022";
     color: #8CA285;
     font-weight: bold;
@@ -98,7 +100,25 @@ main > h2 {
     padding: 126px 0 0 0;
 }
 
-.Sub1_block > p {
+.Sub2_block > h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Avenir_Heavy';
+    color: #8CA285;
+    padding: 66px 0 0 0;
+}
+
+.Sub3_block > h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Avenir_Heavy';
+    color: #8CA285;
+    padding: 46px 0 0 0;
+}
+
+.Sub1_block > p, .Sub2_block > p, .Sub3_block > p {
     text-align: center;
     font-size: 20px;
     font-family: 'Lato', sans-serif;

@@ -4,6 +4,10 @@
     <link rel="stylesheet" href="/assets/css/main/subscription.css">
 {% endblock %}
 
+{% block script %}
+    <script src="/assets/JavaScript/main/subscription.js"></script>
+{% endblock %}
+
 {% block main %}
     <div class="heading">
         <h1>Abonnements</h1>
@@ -11,7 +15,7 @@
     <main>
         <h2>Sélectionner votre abonnement :</h2>
         <div class="list_sub">
-            <div class="Sub1_block">
+            <label label="Sub1" class="Sub1_block">
                 <input type="radio" name="Sub" id="Sub1">
                 <label for="Sub1" id="Sub1_label"></label>
                 <h2>Abonnement student</h2>
@@ -21,16 +25,35 @@
                     <li>La possibilité d’envoyer 50 messages par mois.</li>
                 </div>
                 <h1>9,99€</h1>
-                <p>30% des revenus de l’abonnement contribueront à une association de votre choix </p>
-            </div>
-            <div class="Sub2_block">
+                <p>30% des revenus de l’abonnement contribueront à une association de votre choix</p>
+            </label>
+            <label label="Sub2" class="Sub2_block">
                 <input type="radio" name="Sub" id="Sub2">
                 <label for="Sub2" id="Sub2_label"></label>
-            </div>
-            <div class="Sub3_block">
+                <h2>Abonnement lite</h2>
+                <div>
+                    <li>Plus précis dans les recherches et voir qui consultent vos articles et votre profil</li>
+                    <li>Possibilité d’envoyer 50 messages par mois</li>
+                    <li>Recommandations quotidiennement de profil selon pôle d’activité</li>
+                    <li>Suivi de performances sur les articles</li>
+                </div>
+                <h1>16,99€</h1>
+                <p>30% des revenus de l’abonnement contribueront à une association de votre choix</p>
+            </label>
+            <label for="Sub3" class="Sub3_block">
                 <input type="radio" name="Sub" id="Sub3">
                 <label for="Sub3" id="Sub3_label"></label>
-            </div>
+                <h2>Abonnement advanced</h2>
+                <div>
+                    <li>Permettre d’être mieux référencé</li>
+                    <li>Plus précis dans les recherches et voir qui consultent vos articles et votre profil</li>
+                    <li>Possibilité d’envoyer 100 messages par mois</li>
+                    <li>Accès à 500 web conference</li>
+                    <li>Recommendations d’autant plus personnalisé.</li>
+                </div>
+                <h1>29,99€</h1>
+                <p>30% des revenus de l’abonnement contribueront à une association de votre choix</p>
+            </label>
         </div>
     </main>
 {% endblock %}
