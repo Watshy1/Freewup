@@ -88,6 +88,13 @@ $router->before('GET|POST', '/admin', function() {
     }
 });
 
+$router->before('GET|POST', '/subscription', function() {
+    if (!isset($_SESSION['user'])) {
+        header('location: /login');
+        exit;
+    }
+});
+
 $router->get('/', 'Mvc\Controller\ArticleController@show4lastArticles');
 
 $router->get('/economyArticle', 'Mvc\Controller\ArticleController@showEconomyArticle');
@@ -111,6 +118,8 @@ $router->get('/article/(\d+)', 'Mvc\Controller\ArticleController@showArticle');
 $router->post('/article/(\d+)', 'Mvc\Controller\ArticleController@showArticle');
 
 $router->get('/admin', 'Mvc\Controller\AdminController@adminPage');
+
+$router->get('/subscription', 'Mvc\Controller\UserController@subscriptionPage');
 
 $router->get('/deleteArticle/(\d+)', 'Mvc\Controller\AdminController@deleteArticle');
 

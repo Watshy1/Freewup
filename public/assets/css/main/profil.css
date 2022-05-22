@@ -35,6 +35,7 @@
 }
 
 .container_profil_info_perso > h1 {
+    color: white;
     font-family: 'Avenir_Black';
     font-size: 60px;
 }

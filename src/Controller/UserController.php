@@ -78,6 +78,11 @@ class UserController extends Controller
         ]);
     }
 
+    public function subscriptionPage()
+    {
+        echo $this->twig->render('main/subscription.html.twig');
+    }
+
     #[NoReturn] public function logout() {
         session_destroy();
         header('Location: /login');

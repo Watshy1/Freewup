@@ -1,0 +1,36 @@
+{% extends 'main/base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="/assets/css/main/subscription.css">
+{% endblock %}
+
+{% block main %}
+    <div class="heading">
+        <h1>Abonnements</h1>
+    </div>
+    <main>
+        <h2>Sélectionner votre abonnement :</h2>
+        <div class="list_sub">
+            <div class="Sub1_block">
+                <input type="radio" name="Sub" id="Sub1">
+                <label for="Sub1" id="Sub1_label"></label>
+                <h2>Abonnement student</h2>
+                <div>
+                    <li>Filtres de recherche permet de voir qui consultent vos articles et votre profil.</li>
+                    <li>Un accès à 150 web conférence.</li>
+                    <li>La possibilité d’envoyer 50 messages par mois.</li>
+                </div>
+                <h1>9,99€</h1>
+                <p>30% des revenus de l’abonnement contribueront à une association de votre choix </p>
+            </div>
+            <div class="Sub2_block">
+                <input type="radio" name="Sub" id="Sub2">
+                <label for="Sub2" id="Sub2_label"></label>
+            </div>
+            <div class="Sub3_block">
+                <input type="radio" name="Sub" id="Sub3">
+                <label for="Sub3" id="Sub3_label"></label>
+            </div>
+        </div>
+    </main>
+{% endblock %}
