@@ -56,7 +56,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://via.placeholder.com/1616x801");
+    background-image: url(../../images/main/A2Roue.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 80vw;
